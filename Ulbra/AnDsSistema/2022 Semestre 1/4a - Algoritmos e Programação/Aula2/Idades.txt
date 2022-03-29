@@ -1,0 +1,5 @@
+1 - Contar quantas pessoas estão presentes
+	~Obter dados~
+2 - Somar as idades
+3 - Divir pela quantia e pessoas
+(4 - Arredondar?)

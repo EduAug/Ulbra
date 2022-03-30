@@ -1,0 +1,17 @@
+			~CSS~
+
+HTML - Ossos
+CSS - Pele
+JS - Sistema Nervoso/Tendões/Músculos/Etc.
+
+
+
+
+tag - O tipo
+#id - Um específico
+.class - Alguns específicos
+
+
+Organizar em página (Img, Idw, ...)
+
+**ID (e .class?) dentro da tag no HTML 5**

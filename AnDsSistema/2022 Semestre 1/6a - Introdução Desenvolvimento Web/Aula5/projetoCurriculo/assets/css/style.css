@@ -1,0 +1,106 @@
+.tudo{
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    float: right;
+    background-color: darkcyan;
+    margin-left: 10px;
+}
+.esq{
+    padding-right: 20px;
+
+}
+.linha{
+    clear: both;
+}
+.txtdados{
+    color: darkcyan;
+    float: left;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 40px;
+}
+
+
+h1{
+    background-color: darkcyan;
+    padding: 7px 12px 7px 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: left;
+    color: darkcyan;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+h3{
+    text-align: left;
+    color: darkcyan;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    clear: both;
+}
+h4{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+hr{
+    border-color: darkcyan;
+    width: 90%;
+    margin-bottom: 10px;
+}
+p{
+    text-align: left;
+}
+
+
+#foto{
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+#imgfoto{
+    max-width: 250px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: solid black 2px;
+}
+#dados{
+    width: 70%;
+    float: left;
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+#coluna1{
+    float: left;
+    width: 45%;
+    text-align: left;
+    padding-right: 4%;
+}
+#coluna2{
+    float: left;
+    width: 1px;
+    height: 550px;
+    border-left: solid darkcyan;
+}
+#coluna3{
+    float: left;
+    width: 45%;
+    text-align: left;
+    padding-left: 4%;
+}
+#nivelSkill{
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+}

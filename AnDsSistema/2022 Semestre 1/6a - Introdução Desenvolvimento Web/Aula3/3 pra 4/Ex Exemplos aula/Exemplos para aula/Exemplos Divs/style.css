@@ -1,0 +1,25 @@
+
+.tudo{ 
+	border: solid 1px #000;
+}
+.esquerda {			 
+	width: 30%;
+	height: 100px;
+	float: left; 
+	background-color: #666666; 
+	color: #ffffff;
+}
+.direita { 
+	width: 70%;
+	height: 100px;
+	float: left; 
+	background-color: #aaaaaa; 
+}
+.unica{
+	background-color: #dddddd;
+
+	height: 100px;
+}
+.linha{
+	clear: both; /* garante a posição abaixo da divs superiores (esquerda e direita),  */
+}

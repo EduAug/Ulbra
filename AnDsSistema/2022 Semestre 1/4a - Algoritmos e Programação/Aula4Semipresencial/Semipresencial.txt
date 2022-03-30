@@ -1,0 +1,5 @@
+Integrated Development Environment, ou Ambiente de Desenvolvimento Integrado em português, é um software multifuncional que permite a integração de diversos programas e ferramentas para um "principal", a fim de facilitar o desenvolvimento de software, em especial na conversão de uma linguagem em outra.
+
+
+
+Escolhi a IDE do VS Code pois já havia instalado o programa.

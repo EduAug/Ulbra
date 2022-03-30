@@ -1,0 +1,17 @@
+Framework:
+"Quadro" com recursos para realizar as ações. (Como se fosse um pack do Java, com um "molde", de coisas)
+					(Tipo botar só html no VS Code e já aparecer as coisas ali, tipo isso)
+	-Java: React, Angular, Vuejs
+
+BROWSER só tem JAVASCRIPT 
+*(Compilação?)
+
+
+Curso:
+A N A L I S A R a necessidade do cliente
+
+Desenvolvimento
+-Nativo: Software tem proximidade com o Hardware, facilita
+-Híbrido(CrossPlatform): O Plano B, em uma linguagem que não encaixa bem, deve ser "portado", V Transforma a linguagem para próxima da nativa V
+	Vantagem: Reaproveitamento, cata um pouco de tudo, GAMBIARRA		'React Native'
+

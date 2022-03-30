@@ -1,0 +1,4 @@
+*RAM - Principal
+*HD, SSD - Secundária - Não volátil
+*ROM -Principal - Não volátil, Apenas leitura => BIOs em C
+*Magnético: Alocação de arquivos (Disco, Redes, Setor, Trilha,...)

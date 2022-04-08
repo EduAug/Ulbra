@@ -1,0 +1,18 @@
+3. git clone https://github.com/EduAug/Atv_Branches_IAC.git (em uma pasta "vazia)
+4. cd Atv_Branches_IAC
+4. git checkout Feature_1
+5. touch AP1.txt
+ - - Alteração no arquivo AP1.txt realizado abrindo diretamente o VS Code - -
+  - - Por algum motivo, não consigo usar o comando . code no meu terminal - -
+6. git status
+6. git add .
+6. git commit -m"Adição de arquivo AP1.txt na branch Feature_1"
+6. git push
+7. git checkout Development
+7. git checkout -b Feature_2
+8. git checkout Feature_1 AP1.txt
+ - - Segunda alteração no arquivo AP1.txt realizada diretamente no VS Code - -
+9. git add .
+9. git commit -m"Cópia AP1.txt e adição de lorem"
+9. git push --set-upstream origin Development
+

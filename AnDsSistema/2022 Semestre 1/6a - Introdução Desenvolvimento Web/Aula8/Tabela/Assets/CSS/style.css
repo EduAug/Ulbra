@@ -1,0 +1,141 @@
+*{
+    margin: 0 auto;
+}
+
+/*Tags*/
+body{
+    background-color: #e2e2e2;
+}
+h2{
+    margin-top: 10px;
+}
+td,th{
+    border-bottom: #e2e2e2 solid 1px;
+}
+th{
+    color: darkgray;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+}
+td{
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Classes*/
+.divDerrota{
+    background-image: url('../img/d.svg');
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    float: right;
+    margin-right: 5px;
+}
+.divEmpate{
+    background-image: url('../img/e.svg');
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    float: right;
+    margin-right: 5px;
+}
+.divLinha{
+    clear: both;
+}
+.divTudo{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.divVitoria{
+    background-image: url('../img/v.svg');
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    float: right;
+    margin-right: 5px;
+}
+.imgClube{
+    width: 20px;
+    float: left;
+}
+.spanNomeClube{
+    color: darkgrey;
+    font-size: 12px;
+}
+.tdClube{
+    text-align: left;
+    width: 80%;
+    border-bottom: 0px;
+}
+.tdHorario{
+    font-size: 10px;
+}
+.tdNomeClube{
+    text-align: left;
+}
+.tdNomeJogador{
+    width: 80%;
+    text-align: left;
+}
+.tdUltimasCinco{
+    width: 20%;
+}
+.thJogador{
+    text-align: left;
+}
+.thNomeClube{
+    width: 50%;
+}
+.thProximosJogos, .trTableJogos, .tdHorario{
+    border-bottom: 0px;
+}
+.thTableJogo{
+    text-align: left;
+}
+
+/*IDs*/
+#divCabecalho{
+    background-color: #162E58;
+    min-height: 100px;
+    padding: 20px 50px 20px 50px;
+}
+#divClassificacao{
+    width: 60%;
+    background-color: white;
+}
+#divGoleadores{
+    width: 60%;
+    background-color: white;
+}
+#divJogos{
+    width: 60%;
+    background-color: white;
+}
+#tableClassificacao{
+    width: 100%;
+}
+#tableGoleadores{
+    width: 100%;
+}
+#tableJogos{
+    width: 100%;
+    text-align: center;
+}
+#tableJogoExc{
+    width: 100%;
+}
+#tituloCabecalhoh1{
+    color: white;
+    font-size: 16px;
+    float: left;
+}
+
+
+
+
+
+/*só p me orientar*/
+td{
+    text-align: center;
+}

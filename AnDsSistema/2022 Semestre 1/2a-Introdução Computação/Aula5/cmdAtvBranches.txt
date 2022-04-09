@@ -1,4 +1,4 @@
-3. git clone https://github.com/EduAug/Atv_Branches_IAC.git (em uma pasta "vazia)
+3. git clone https://github.com/EduAug/Atv_Branches_IAC.git (em uma pasta "vazia")
 4. cd Atv_Branches_IAC
 4. git checkout Feature_1
 5. touch AP1.txt

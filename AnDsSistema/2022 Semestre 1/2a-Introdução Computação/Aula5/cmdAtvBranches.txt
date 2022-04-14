@@ -16,3 +16,16 @@
 9. git commit -m"Cópia AP1.txt e adição de lorem"
 9. git push --set-upstream origin Development
 
+11. git clone https://github.com/AlfredoMello/trabalho-branchs_IAC.git
+11. cd trabalho-branchs_IAC
+11. git checkout development
+11. git checkout -b featureEduardoAugusto
+11. mkdir featureEdu1
+ - - Adição do primeiro arquivo no repositório de equipe - -
+11. git add .
+11. git commit -m"Primeira adição no repostório Alfredo"
+11. git push --set-upstream origin featureEduardoAugusto (?)
+ - - Adição do segundo arquivo no repositório de equipe - -
+11. git add .
+11. git commit -m"Segundo commit no repositório Alfredo"
+11. git push

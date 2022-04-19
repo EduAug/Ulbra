@@ -1,0 +1,23 @@
+1 
+ROM é uma
+As memórias voláteis
+O primeiro compilador 
+
+2
+2, 3, 1, 4, 5
+
+3
+a memória RAM, baseada
+
+4
+Um dos principais programas instalados na ROM é a BIOS (Basic Input/Output System, ou Sistema de Entrada/Saída Básico), sua função é iniciar o Sistema Operacional do computador, bem como desempenhar as tarefas executadas por este, bem como reconhecer o hardware e periféricos instalados no computador.
+
+5
+A memória secundária é 
+- mais lenta, uma vez que seu objetivo principal é armazenar os dados, e não "ler" os dados, e como evidenciado pela arquitetura de Von Neumann, encontra-se exterior ao processador, logo, há uma demora maior para os dados chegarem ao processador;
+- possui maior capacidade pois seu objetivo, como explicado anteriormente, é armazenar e não ler os dados, com o custo do armazenamento cada vez menor (no momento, o GB está mais ou menos $1,01) é possível dedicar mais espaço para o armazenamento, por um valor menor, enquanto se dedica menos ao "processamento" destes dados;
+- teoricamente permanente: não volátil uma vez que não depende de uma corrente elétrica constante para segurar os dados, então é possível que, uma vez salvo na memória secundária, o arquivo seja conservado permanentemente ali, salva casos como dano físico a memória secundária ou caso sobrescrevam o arquivo no disco magnético (mas até neste caso há possibilidade de conservar o dado).
+
+6
+https://github.com/EduAug/AvaliacaoAp1 
+(Os passos e comandos utilizados estão dentro do arquivo .odt)

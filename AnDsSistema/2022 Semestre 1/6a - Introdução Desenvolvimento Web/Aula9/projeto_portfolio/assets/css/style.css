@@ -1,0 +1,132 @@
+*{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: rgb(71, 86, 100);
+}
+header a:hover{
+    text-decoration: none;
+    font-size: larger;
+    border-right: dashed 1px gray;
+}
+a:visited{
+    text-decoration: none;
+    color:rgb(71, 86, 100);
+} 
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+header{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+}
+.divInfo{
+    padding: 5% 0 0 0;
+}
+.divTituloGeral{
+    padding-top: 5%;
+}
+.divTitulo1{
+    padding-bottom: 5%;
+}
+.divTrabs{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.divTudo{
+    margin: 0 auto;
+    width: 80%;
+}
+.imgTr{
+    max-width: 20%;
+}
+#idCabecalho{
+    padding: 20px 40px 20px 40px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: rgb(71, 86, 100);
+    font-weight: lighter;
+}
+#idEncontrar{
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px solid white;
+    border-radius: 9%;
+    margin-top: 1%;
+}
+#idFoto{
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+}
+/*#idImgTrab{
+    display: flex;
+    flex-direction: row;
+    max-width: 110px;
+    max-height: 110px;
+}*/
+#linksCabecalho{
+    flex-grow: 1;
+    text-align: right;
+    width: 3%;
+    /*border: solid 1px black;*/
+}
+#linksCabecalhoM{
+    flex-grow: 7;
+    text-align: right;
+    display: inline-block;
+    width: 1px;
+    /*border: solid 1px black;*/
+}
+#sectionCont{
+    background-color: rgb(71, 86, 100);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 0 5% 0;
+}
+#sectionFoto{
+    background-color: rgb(59, 206, 157);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 0 5% 0;
+}
+#sectionProj{
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 86, 100);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: auto;
+}
+
+
+
+#containerTeste{
+    display: flex;
+    flex-direction: row;
+}
+.divTexteTrabalho{
+    padding-top: 10%;
+    text-align: center;
+}
+.imgTeste{
+    max-width: 250px;
+}

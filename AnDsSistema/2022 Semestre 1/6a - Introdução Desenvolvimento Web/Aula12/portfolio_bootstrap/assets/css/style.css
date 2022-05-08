@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+}
+#bgFot{
+    background-color: rgb(15, 189, 151);
+}
+#bgDad{
+    background-color: rgb(65, 74, 83);
+}
+#bgFoo{
+    background-color: black;
+}
+/*#bgTra{
+    background-color: white;
+}*/

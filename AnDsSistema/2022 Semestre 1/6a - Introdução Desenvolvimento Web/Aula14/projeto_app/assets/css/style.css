@@ -1,0 +1,62 @@
+header{
+    color: rgb(241, 122, 67);
+}
+section img{
+    max-width: 180px;
+}
+section p{
+    color: rgb(241, 122, 67);
+}
+section a:link{
+    text-decoration: none;
+    color: black;
+}
+.hover:hover{
+    background-color: rgba(241, 122, 67, 0.664);
+}
+footer{
+    background-color: rgb(241, 122, 67);
+    color: white;
+}
+#colFot{
+    max-width: 100px;
+}
+#especifico1{
+    font-style: italic;
+}
+#especifico2{
+    font-weight: bolder;
+}
+#especifico3{
+    font-size: small;
+}
+#especifico4 a:link{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 2%;
+}
+#especifico4 a:hover{
+    color: rgb(241, 122, 67);
+}
+#especifico4 a:visited:hover{
+    color: rgb(241, 122, 67);
+}
+#especifico4 a:visited{
+    color: white;
+}
+#especifico5 a:link{
+    color: white;
+}
+#especifico5 a:hover{
+    color: black;
+}
+#especifico5 a:visited{
+    color: black;
+}
+#especifico5 a:visited:hover{
+    color: white;
+}

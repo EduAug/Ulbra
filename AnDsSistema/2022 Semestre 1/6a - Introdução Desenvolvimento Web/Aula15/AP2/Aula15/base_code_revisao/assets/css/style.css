@@ -1,0 +1,38 @@
+section a{
+    color: cadetblue;
+    text-decoration: none;
+}
+
+section a:hover{
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.58;
+}
+
+section h2{
+    color: rgba(0, 0, 0, 0.541176);
+}
+
+header{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+p{
+    margin-top: 29px;
+}
+
+.menu{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}

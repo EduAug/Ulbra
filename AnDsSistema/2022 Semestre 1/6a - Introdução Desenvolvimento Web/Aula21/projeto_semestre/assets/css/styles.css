@@ -1,0 +1,25 @@
+/* classes */
+.bg-image{
+    background-image: url(https://wallpaperaccess.com/full/6234451.jpg);
+}
+
+/* IDs */
+#imgServ:hover{
+    transform: scale(1.5);
+}
+#imgServ1:hover{
+    transform: scale(1.5);
+}
+#imgServ2:hover{
+    transform: scale(1.5);
+}
+
+#esp1{
+    text-decoration: none;
+    color: black;
+}
+
+#posts:hover{
+    background-color: rgba(0, 0, 0, 0.223);
+    border-radius: 4%;
+}

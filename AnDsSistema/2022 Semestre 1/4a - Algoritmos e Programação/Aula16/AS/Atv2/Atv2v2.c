@@ -43,7 +43,7 @@ int main(){
 	while(opc!=5){
 	
 			printf("Escolha uma opção:\n");
-			printf("1-Listar alunos aprovados\n2-Listar alunos reprovados\n3-Listar alunos com nota inferior a 'X'\n4-Dados do aluno na posi��o 'X'\n5-Encerrar\n");
+			printf("1-Listar alunos aprovados\n2-Listar alunos reprovados\n3-Listar alunos com nota inferior a 'X'\n4-Dados do aluno na posição 'X'\n5-Encerrar\n");
 			scanf("%d%*c", &opc);
 			
 		switch (opc){

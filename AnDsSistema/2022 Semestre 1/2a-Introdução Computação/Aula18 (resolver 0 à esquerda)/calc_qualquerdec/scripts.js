@@ -5,6 +5,9 @@ function dec2Bin(num1,base1){
     var res="";
     var i=0;
 
+    //Fazer uma nova função, que identifica se o primeiro número do string for 0
+    //E caso seja, remover o Zero á Esquerda da string
+
 
     while(i==0){
 

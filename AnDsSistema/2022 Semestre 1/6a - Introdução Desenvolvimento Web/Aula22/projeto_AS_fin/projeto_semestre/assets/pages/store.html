@@ -1,0 +1,463 @@
+<head>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="assets/js/script4.js"></script>
+</head>
+
+<div class="container rounded bg-light border-custom">
+    <h1 class="text-center m-5 p-3 border-custom2 rounded">
+        Check out our cool merch!
+    </h1>
+    <div class="row text-center m-4">
+        <h4 class="mb-5">Sort by:</h4>
+        <div id="menuNaviStore" class="col-md-4 p-3">
+            <a href="#navShirts">
+                <p> <b>Shirts</b> </p>
+            </a>
+        </div>
+        <div id="menuNaviStore" class="col-md-4 p-3 border-custom3">
+            <a href="#navHoodie">
+                <p> <b>Hoodies</b> </p>
+            </a>
+        </div>
+        <div id="menuNaviStore" class="col-md-4 p-3">
+            <a href="#navDisc">
+                <p> <b>Discs</b> </p>
+            </a>
+        </div>
+    </div>
+
+    <hr class="cusRuler2">
+    <h1 id="navShirts" class="text-center">Shirts</h1>
+
+    <div class="row"><!--Shirts-->
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/CurtaPretaBranco.jpg" alt="">
+                    <div class="card-body text-center">
+                        White Logo T-Shirt
+                        <p>
+                            $ 9.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                    <div class="modal fade" id="modBuy" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Credit Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumb"
+                                                placeholder="XXXX-XXXX-XXXX-XXXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Verification Code</label>
+                                            <input type="text" class="form-control" id="cardCode" placeholder="XXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="useName"
+                                                placeholder="Your name here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="useAddr"
+                                                placeholder="Your address here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" id="cardExpi" placeholder="XX/XX" />
+                                        </div>
+                                        <label for="choSize">Size:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                XL
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                L
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                M
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                S
+                                            </label>
+                                        </div>
+                                        <div class="modal-footer d-block text-center">
+                                            <p class="ps-2">Thanks for buying with us!</p>
+                                            <button type="submit" class="btn bg-custom2 text-light">Buy!</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/LongaBrancaPreto.jpg" alt="">
+                    <div class="card-body text-center">
+                        Black Logo Shirt
+                        <p>
+                            $ 11.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/CurtaBrancaPreto.jpg" alt="">
+                    <div class="card-body text-center">
+                        Black Logo T-Shirt
+                        <p>
+                            $ 9.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+            </a>
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/LongaBrancaPreto.jpg" alt="">
+                    <div class="card-body text-center">
+                        White Logo Shirt
+                        <p>
+                            $ 11.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/CurtaPretaVermelho.jpg" alt="">
+                    <div class="card-body text-center">
+                        Red On Black T-Shirt
+                        <p>
+                            $ 14.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/CurtaBrancaVermelho.jpg" alt="">
+                    <div class="card-body text-center">
+                        Red On White T-Shirt
+                        <p>
+                            $ 14.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="cusRuler2">
+    <h1 id="navHoodie" class="text-center">Hoodies</h1>
+
+    <div class="row"><!--Hoodies-->
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/MoletomBranco.jpg" alt="">
+                    <div class="card-body text-center">
+                        White Simple© Hoodie
+                        <p>
+                            $ 24.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                    <div class="modal fade" id="modBuy" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Credit Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumb"
+                                                placeholder="XXXX-XXXX-XXXX-XXXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Verification Code</label>
+                                            <input type="text" class="form-control" id="cardCode" placeholder="XXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="useName"
+                                                placeholder="Your name here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="useAddr"
+                                                placeholder="Your address here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" id="cardExpi" placeholder="XX/XX" />
+                                        </div>
+                                        <label for="choSize">Size:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                XL
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                L
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                M
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                S
+                                            </label>
+                                        </div>
+                                        <div class="modal-footer d-block text-center">
+                                            <p class="ps-2">Thanks for buying with us!</p>
+                                            <button type="submit" class="btn btn-warning">Buy!</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/MoletomCrow.jpg" alt="">
+                    <div class="card-body text-center">
+                        Early Crow Hoodie
+                        <p>
+                            $ 29.99
+                        </p>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy" disabled>
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/MoletomVermelho.jpg" alt="">
+                    <div class="card-body text-center">
+                        Red Simple© Hoodie
+                        <p>
+                            $ 24.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/MoletomPreto.jpg" alt="">
+                    <div class="card-body text-center">
+                        Black Simple© Hoodie
+                        <p>
+                            $ 24.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="cusRuler2">
+    <h1 id="navDisc" class="text-center">Discs</h1>
+
+    <div class="row"><!--Goodies-->
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid h-100 w-100" src="assets/img/earlyCrow.jpg" alt="">
+                    <div class="card-body text-center">
+                        Early Crow (CD)
+                        <p>
+                            $ 12.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy2">
+                        Buy now!
+                    </button>
+                    <div class="modal fade" id="modBuy2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">Credit Card Number</label>
+                                            <input type="text" class="form-control" id="cardNumb"
+                                                placeholder="XXXX-XXXX-XXXX-XXXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Verification Code</label>
+                                            <input type="text" class="form-control" id="cardCode" placeholder="XXX" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="useName"
+                                                placeholder="Your name here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="useAddr"
+                                                placeholder="Your address here" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" id="cardExpi" placeholder="XX/XX" />
+                                        </div>
+                                        <div class="modal-footer d-block text-center">
+                                            <p class="ps-2">Thanks for buying with us!</p>
+                                            <button type="submit" class="btn bg-custom2 text-light">Buy!</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid h-100 w-100" src="assets/img/neonGrip.jpg" alt="">
+                    <div class="card-body text-center">
+                        Neon Grip (CD)
+                        <p>
+                            $ 12.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy2">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <a id="menuServices" class="text-decoration-none text-dark">
+                    <img class="img-fluid" src="assets/img/earlyCrowLP.jpg" alt="">
+                    <div class="card-body text-center">
+                        Early Crow (LP)
+                        <p>
+                            $ 21.99
+                        </p>
+                        <hr>
+                    </div>
+                    <button type="button" class="btn mx-auto d-block mb-4 bt-cusBg" data-bs-toggle="modal"
+                        data-bs-target="#modBuy2">
+                        Buy now!
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>

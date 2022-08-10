@@ -29,7 +29,15 @@ function dec2Bin(num1,base1){
         }
     }
     
-    return inv(res);
+    var numfim = inv(res);
+    console.log(numfim);
+    var numfimSplit = numfim.split('');
+    console.log(numfimSplit);
+    var alola = 0;
+    if(numfimSplit[0]==0){
+      alola = numfimSplit.shift();
+    }
+    console.log(alola);
 
 }
 

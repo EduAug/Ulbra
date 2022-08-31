@@ -1,0 +1,12 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    padding-top: 1%;
+}
+.bg-secondary2{
+    background-color: rgb(208, 208, 208)
+}
+.bg-secondary3{
+    background-color: rgb(174, 174, 174)
+}

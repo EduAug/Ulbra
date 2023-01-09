@@ -1,0 +1,9 @@
+CRITICAL - 2022-11-22 21:01:12 --> Invalid file: admin/template/body.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/template/body.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/template/body', [], true)
+ 3 APPPATH/Controllers/Admin/Client.php(21): view('admin/template/body')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,19 @@
+Arquivos alterados:
+    - views admin header  (Sair header)                 <Adicionar#>ok
+    - routes admin                                      <Alteração•>ok
+    - controller admin admin (Logout)                   <Adicionar#>ok
+    - views admin header (Routes, HOME, LIST CLIENTS)   <Alteração•>ok
+    - routes admin listclients                          <Adicionar#>ok?
+    - controller admin 'Client'                         <Nova◘>ok
+    - views admin list clients A T T E N T I O N        <Nova◘>ok
+    - "assets" na public                                <Organizar☻>
+    - header styles adm view                            <Alteração•>OK?
+    - views admin client insertClient                   <Nova◘>ok
+    - models ClientModel                                <Alteração•>ok
+    - controller client                                 <Alteração•>ok?
+    - admin views update delete clients                 <Alteração•>ok?
+    - routes update delete client                       <Alteração•>ok
+    - ClientModel update                                <Alteração•>ok?                           
+    - views update client				<Nova◘>
+    - 
+    - 

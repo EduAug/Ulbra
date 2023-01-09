@@ -1,0 +1,107 @@
+CRITICAL - 2022-12-03 05:46:19 --> Undefined property: App\Controllers\Admin\Client::$ClientModel
+in APPPATH/Controllers/Admin/Client.php on line 101.
+ 1 APPPATH/Controllers/Admin/Client.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Client::$ClientModel', 'APPPATH/Controllers/Admin/Client.php', 101)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 05:49:15 --> Array to string conversion
+in APPPATH/Controllers/Admin/Client.php on line 108.
+ 1 APPPATH/Controllers/Admin/Client.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Controllers/Admin/Client.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:05:04 --> Attempt to read property "ClientModel" on string
+in APPPATH/Controllers/Admin/Client.php on line 102.
+ 1 APPPATH/Controllers/Admin/Client.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ClientModel" on string', 'APPPATH/Controllers/Admin/Client.php', 102)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:06:55 --> Undefined property: App\Controllers\Admin\Client::$ClientModel
+in APPPATH/Controllers/Admin/Client.php on line 104.
+ 1 APPPATH/Controllers/Admin/Client.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Client::$ClientModel', 'APPPATH/Controllers/Admin/Client.php', 104)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:12:32 --> Undefined property: App\Controllers\Admin\Client::$ClientModel
+in APPPATH/Controllers/Admin/Client.php on line 104.
+ 1 APPPATH/Controllers/Admin/Client.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin\\Client::$ClientModel', 'APPPATH/Controllers/Admin/Client.php', 104)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:14:15 --> Object of class App\Models\ClientModel could not be converted to string
+in APPPATH/Controllers/Admin/Client.php on line 104.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:15:17 --> Undefined variable $search
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(108): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:15:49 --> Undefined variable $search
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(108): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:16:07 --> Undefined variable $search
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(108): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:16:31 --> Undefined variable $search
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(108): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:20:09 --> Undefined variable $data
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(113): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 06:58:52 --> Undefined variable $search
+in APPPATH/Views/admin/client/searchClients.php on line 32.
+ 1 APPPATH/Views/admin/client/searchClients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $search', 'APPPATH/Views/admin/client/searchClients.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/searchClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/searchClients', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(113): view('admin/client/searchClients', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->getClientsFor()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

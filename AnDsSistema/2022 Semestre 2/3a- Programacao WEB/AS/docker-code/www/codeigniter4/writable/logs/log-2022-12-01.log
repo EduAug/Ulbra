@@ -1,0 +1,20 @@
+CRITICAL - 2022-12-01 09:35:40 --> Unclosed '{' on line 15
+in APPPATH/Views/admin/client/listClients.php on line 52.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/client/listClients', [], true)
+ 3 APPPATH/Controllers/Admin/Client.php(22): view('admin/client/listClients', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Client->listClients()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 21:00:26 --> unlink(/var/www/html/codeigniter4/writable/session/ci_session987d1217a68aeb7313bbfbb06b037c8c9633fd51): No such file or directory
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 247.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/var/www/html/codeigniter4/writable/session/ci_session987d1217a68aeb7313bbfbb06b037c8c9633fd51): No such file or directory', 'SYSTEMPATH/Session/Handlers/FileHandler.php', 247)
+ 2 SYSTEMPATH/Session/Handlers/FileHandler.php(247): unlink('ROOTPATH/writable/session/ci_session987d1217a68aeb7313bbfbb06b037c8c9633fd51')
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->destroy('987d1217a68aeb7313bbfbb06b037c8c9633fd51')
+ 4 SYSTEMPATH/Session/Session.php(441): session_destroy()
+ 5 APPPATH/Controllers/Admin/Admin.php(30): CodeIgniter\Session\Session->destroy()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Admin->logout()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

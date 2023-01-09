@@ -1,0 +1,47 @@
+CRITICAL - 2022-11-08 16:52:33 --> Undefined variable $arrayClients
+in APPPATH/Views/client/listClients.php on line 14.
+ 1 APPPATH/Views/client/listClients.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arrayClients', 'APPPATH/Views/client/listClients.php', 14)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/client/listClients.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('client/listClients', [], true)
+ 5 APPPATH/Controllers/Client.php(15): view('client/listClients')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Client->listClients()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:23:36 --> Invalid file: admin/main/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/main/login.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main/login', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/main/login')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:24:57 --> Invalid file: admin/main/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/main/login.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main/login', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/main/login')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:25:23 --> Invalid file: admin/main/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/main/login.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main/login.php', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/main/login.php')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 18:27:33 --> Invalid file: admin/main/login.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/main/login.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/main/login.php', [], true)
+ 3 APPPATH/Controllers/Admin/Admin.php(22): view('admin/main/login.php')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Admin\Admin->login()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

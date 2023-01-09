@@ -1,0 +1,83 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #3E3E3E;
+}
+footer, footer a{
+    background-color: #3E3E3E;
+    color: #F5E5C1;
+}
+footer a:hover{
+    color: #F4722B;
+}
+header{
+    background-color: #3E3E3E;
+    color: #F5E5C1;
+}
+nav{
+    background-color: #333333;
+    color: #F5E5C1;
+    min-height: 400px;
+}
+nav a:link, nav a:visited, nav a:active{
+    text-decoration: none;
+    color: #F5E5C1;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding-top: 1%;
+}
+section{
+    color: #3E3E3E;
+}
+.bg-secondary2 a:hover{
+    color: #F4722B;
+}
+.bg-secondary2 h2{
+    background-color: #272727;
+}
+.bg-secondary3{
+    background-color: rgb(174, 174, 174);
+}
+.bg-secondary4{
+    background-color: rgb(102, 102, 102);
+}
+.bg-secondary5 a{
+    color: rgb(0, 0, 0);
+}
+.bg-secondary5 a:hover{
+    color: white;
+}
+.bg-secondary5:hover{
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+.bg-secondary6:hover{
+    background-color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
+}
+.bg-secondary6:hover{
+    background-color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
+}
+.bg-secondary6 td:hover{
+    background-color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
+}
+.border-custom{
+    border-top: solid #F5E5C1 3px;
+    border-bottom: solid #F5E5C1 3px;
+}
+.border-custom2{
+    border: #3E3E3E 4px solid;
+    border-radius: 12px;
+    background-color: white;
+}
+.btn-custom{
+    color: #F4722B;
+    background-color: #3E3E3E;
+}
+.btn-custom:hover{
+    color:#F5E5C1;
+}

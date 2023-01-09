@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "5fc2ca4d-d895-4b35-af0c-461de739d0e9",
+		"name": "APIAtividade",
+		"description": "# API Bored\n\npara quando se está entediado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23946357"
+	},
+	"item": [
+		{
+			"name": "API Entediado Check de Saude",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Código do Estatus deve ser 200',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.boredapi.com/api/",
+					"protocol": "http",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Entediado Check de Saude de Atividade",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('O código status deve ser 200', function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.boredapi.com/api/activity/",
+					"protocol": "http",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Entediado Atividade com Filtro de Tipo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Tipo de atividade deve ser educacional', function(){\r",
+							"    let respostaJson = pm.response.json();\r",
+							"    pm.expect(respostaJson.type).to.eql('education');\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.boredapi.com/api/activity?type=education",
+					"protocol": "http",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "education"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Entediado Atividade com Filtro de Tipo Recreational",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Tipo de atividade deve ser educacional', function(){\r",
+							"    let respostaJson = pm.response.json();\r",
+							"    pm.expect(respostaJson.type).to.eql('recreational');\r",
+							"})\r",
+							"pm.test('Status deve ser 200', function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.boredapi.com/api/activity?type=recreational",
+					"protocol": "http",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "recreational"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Entediado Filtro com Price",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('O preço deve ser 0',function(){\r",
+							"    let respostaJsonPreco = pm.response.json();\r",
+							"    pm.expect(respostaJsonPreco.price).to.eql(0);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.boredapi.com/api/activity?price=0.0",
+					"protocol": "http",
+					"host": [
+						"www",
+						"boredapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "0.0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Execicios entrega/1.0.0": {
+        "runtime": {
+          "Execicios entrega.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Execicios entrega/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec9d6893-c513-42a4-9745-46021974616d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/2a- Eng Software/video/2022-11-03 09-07-39.mkv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/2a- Eng Software/video/AP2_EngSoft.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/3a- Programacao WEB/AP2/video/2022-10-28 09-33-38.mkv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/3a- Programacao WEB/AP2/video/AP2_PW.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/3a- Programacao WEB/AS/video/AvalSem-ProgramacaoWeb.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/AP2_IHC.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/Documento_AP2.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/Documento_AP2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/alta-fidelidade_Amigos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/alta-fidelidade_Feed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/baixa-fidelidade.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/baixa-fidelidade.kra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/media-fidelidade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2022 Semestre 2/AP2_IHC/resumo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/WelloHorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/out/production/WelloHorld/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WelloHorld/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../print hello.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2MiBxWWoHEmV18V9PPS1jOrvqDa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec9d6893-c513-42a4-9745-46021974616d" name="Changes" comment="" />
+      <created>1678240777270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678240777270</updated>
+      <workItem from="1678240778510" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

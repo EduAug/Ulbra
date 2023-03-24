@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\bin\Debug\net7.0\TDE-Lista.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\bin\Debug\net7.0\TDE-Lista.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\bin\Debug\net7.0\TDE-Lista.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\bin\Debug\net7.0\TDE-Lista.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\bin\Debug\net7.0\TDE-Lista.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\refint\TDE-Lista.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\TDE-Lista.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\TDE-Lista\obj\Debug\net7.0\ref\TDE-Lista.dll

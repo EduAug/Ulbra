@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\bin\Debug\net7.0\Aula03.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\bin\Debug\net7.0\Aula03.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\bin\Debug\net7.0\Aula03.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\bin\Debug\net7.0\Aula03.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\bin\Debug\net7.0\Aula03.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\refint\Aula03.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\Aula03.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula03\obj\Debug\net7.0\ref\Aula03.dll

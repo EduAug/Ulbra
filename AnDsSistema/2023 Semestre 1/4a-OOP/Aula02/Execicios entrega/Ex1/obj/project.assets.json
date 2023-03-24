@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\Execicios entrega.csproj",
+      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\Ex1\\Execicios entrega.csproj",
       "projectName": "Execicios entrega",
-      "projectPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\Execicios entrega.csproj",
+      "projectPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\Ex1\\Execicios entrega.csproj",
       "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\obj\\",
+      "outputPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula02\\Execicios entrega\\Ex1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"

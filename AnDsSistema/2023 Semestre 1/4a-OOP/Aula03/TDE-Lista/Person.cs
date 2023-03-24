@@ -7,7 +7,7 @@ namespace TDE_Lista
 {
     public class Person
     {
-        public int ID {get; private set;}
+        public int Id {get; private set;}
 
         public string Name {get ; set;}
 
@@ -15,7 +15,7 @@ namespace TDE_Lista
 
 
         public Person(int id, string name, string phone){
-            this.ID = id;
+            this.Id = id;
             this.Name = name;
             this.Phone = phone;
         }

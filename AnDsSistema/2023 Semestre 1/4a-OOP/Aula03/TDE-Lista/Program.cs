@@ -19,7 +19,7 @@ while (loopCont != 0)
         case 1:
             Console.Clear();
             foreach (var item in repository.GetAll()){
-                say($"ID: {item.ID}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
+                say($"ID: {item.Id}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
             }
             break;
         case 2:
@@ -27,52 +27,70 @@ while (loopCont != 0)
             say($"\n\nInsira os dados da pessoa a ser inserida:\n\n");
             say($"ID: ");
             qryId = Convert.ToInt32(Console.ReadLine());
-            say($"Nome: ");
-            qryName = Convert.ToString(Console.ReadLine());
-            say($"Telefone: ");
-            qryPhone = Convert.ToString(Console.ReadLine());
+            if(repository.CheckExists(qryId)==0){
 
-            Person person = new Person(qryId,qryName,qryPhone);
-            repository.Include(person);
+                say($"Nome: ");
+                qryName = Convert.ToString(Console.ReadLine());
+                say($"Telefone: ");
+                qryPhone = Convert.ToString(Console.ReadLine());
 
+                Person person = new Person(qryId,qryName,qryPhone);
+                repository.Include(person);
+
+            }else if(repository.CheckExists(qryId)==qryId){
+                say($"Já existe um usuário cadastrado com esse Id, tente outro\n");
+            }
             break;
         case 3:
             Console.Clear();
             say($"\n\nInsira o ID do usuário que deseja atualizar: ");
             qryId = Convert.ToInt32(Console.ReadLine());
-            say($"O que você gostaria de atualizar?");
-            say($"1- Apenas o nome\n2- Apenas o telefone\n3- Ambos");
-            qryCho = Convert.ToInt32(Console.ReadLine());
-            if (qryCho == 1){
-                say($"\nInsira o novo nome do usuário {qryId}");
-                qryName = Convert.ToString(Console.ReadLine());
+            if(repository.CheckExists(qryId)==qryId){
 
-                repository.Update(qryId,qryName,"",qryCho);
-            }else if(qryCho == 2){
-                say($"\nInsira o novo telefone do usuário {qryId}");
-                qryPhone = Convert.ToString(Console.ReadLine());
+                say($"O que você gostaria de atualizar?");
+                say($"1- Apenas o nome\n2- Apenas o telefone\n3- Ambos");
+                qryCho = Convert.ToInt32(Console.ReadLine());
+                if (qryCho == 1){
 
-                
-                repository.Update(qryId,"",qryPhone,qryCho);
-            }else if(qryCho == 3){
-                say($"\nInsira o novo nome do usuário {qryId}");
-                qryName = Convert.ToString(Console.ReadLine());
-                say($"\nInsira o novo telefone do usuário {qryId}");
-                qryPhone = Convert.ToString(Console.ReadLine());
+                    say($"\nInsira o novo nome do usuário {qryId}");
+                    qryName = Convert.ToString(Console.ReadLine());
 
-                
-                repository.Update(qryId,qryName,qryPhone,qryCho);
+                    repository.Update(qryId,qryName,"",qryCho);
+
+                }else if(qryCho == 2){
+
+                    say($"\nInsira o novo telefone do usuário {qryId}");
+                    qryPhone = Convert.ToString(Console.ReadLine());
+                    
+                    repository.Update(qryId,"",qryPhone,qryCho);
+
+                }else if(qryCho == 3){
+
+                    say($"\nInsira o novo nome do usuário {qryId}");
+                    qryName = Convert.ToString(Console.ReadLine());
+                    say($"\nInsira o novo telefone do usuário {qryId}");
+                    qryPhone = Convert.ToString(Console.ReadLine());
+                    
+                    repository.Update(qryId,qryName,qryPhone,qryCho);
+
+                }
+            }else{
+                say($"Usuário inexistente! Tente Novamente\n");
+                break;
             }
             
-
             break;
         case 4:
             Console.Clear();
             say($"\n\nInsira o ID da pessoa a ser removida: \n\n");
             qryId = Convert.ToInt32(Console.ReadLine());
+            if(repository.CheckExists(qryId)==qryId){
+            
+                repository.Delete(qryId);
 
-            repository.Delete(qryId);
-
+            }else{
+                say($"Usuário inexistenet! Tente novamente\n");
+            }
             break;
         case 5:
             loopCont = 0;
@@ -114,17 +132,17 @@ repository.Include(Person2);
 repository.Include(Person3);
 foreach (var item in repository.GetAll())
 {
-    say($"ID: {item.ID}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
+    say($"ID: {item.Id}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
 }
 repository.Delete(20);
 foreach (var item in repository.GetAll())
 {
-    say($"ID: {item.ID}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
+    say($"ID: {item.Id}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
 }
 repository.Update(17,"MVP 17","48912360589");
 foreach (var item in repository.GetAll())
 {
-    say($"ID: {item.ID}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
+    say($"ID: {item.Id}     |Nome: {item.Name}      |Telefone: {item.Phone}");    
 }
 
 */

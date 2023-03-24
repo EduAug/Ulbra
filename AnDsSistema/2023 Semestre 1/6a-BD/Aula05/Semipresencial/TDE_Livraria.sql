@@ -27,7 +27,7 @@ create table autores_livros(
 			on update cascade
             on delete set null
 );
--- insert into autores_livros values(1, 1),(1, 2),(2, 3),(3, 4),(3, 5),(4, 6);
+/*insert into autores_livros values(1, 1),(1, 2),(2, 3),(3, 4),(3, 5),(4, 6),(5,7);*/
 create table vendas(
 	id int auto_increment primary key,
     dataVenda date not null,
@@ -49,8 +49,8 @@ create table vendas(
 			on update cascade
             on delete set null
 );
- insert into vendas_livros values	(null, 5,110,1),(null, 2,190,2),(null, 1,110,3),(null, 3,96,4),(null, 1,365,5),(null, 2,115,6),(null, 3,110,1),(null, DEFAULT,110,3),
-									(null, 4,110,1),(null, 1,115,6),(null, 7,96,4),(null, 2,115,6),(null, 1,190,2),(null, 2,96,4); 
+/* insert into vendas_livros values	(null, 5,110,1),(null, 2,190,2),(null, 1,110,3),(null, 3,96,4),(null, 1,365,5),(null, 2,115,6),(null, 3,110,1),(null, DEFAULT,110,3),
+									(null, 4,110,1),(null, 1,115,6),(null, 7,96,4),(null, 2,115,6),(null, 1,190,2),(null, 2,96,4); */
 
 -- Criar view com livros mais vendidos e seus dados respectivos
 
@@ -75,9 +75,10 @@ from vendas_livros VL
 	inner join livros L on L.id = VL.id_livro
     inner join autores_livros AL on L.id=AL.id_livro
     right join autores A on A.id=AL.id_autor
-where AL.id_livro is null;
+where VL.id_livro is null;
 
 select * from autores_sem_publicacoes;
+
 
 
 -- Criar view com a data de última venda de cada livro
@@ -87,6 +88,7 @@ select L.titulo as Titulo, MAX(V.dataVenda) as Data_Venda
 from vendas_livros VL
 	inner join vendas V on V.id=VL.id			-- Comentário pra justificar a lógica, achei estranho não ter um id de venda em vendas_itens, "por sorte", as ids coincidiram
 	inner join livros L on L.id=VL.id_livro
+where VL.id is not null
 group by L.id;
     
 select * from ultimas_vendas;

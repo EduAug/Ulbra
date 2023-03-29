@@ -7,12 +7,15 @@ public class Relogio {
     void acertarRelogio(int hora, int minuto, int segundo){
 
         while (hora > 12){
+
             hora = hora-12;
         }
         while (minuto > 60){
+
             minuto = minuto-60;
         }
         while (segundo > 60){
+
             segundo = segundo-60;
         }
         ponteiroHora.posicao = hora;
@@ -38,6 +41,7 @@ public class Relogio {
     void horaAtual(boolean AMPM){
 
         if(AMPM){
+
             ponteiroMinuto.posicao = ponteiroMinuto.posicao * 5;
             ponteiroSegundo.posicao = ponteiroSegundo.posicao * 5;
             String horaForm = String.format("%02d", ponteiroHora.posicao);
@@ -45,6 +49,7 @@ public class Relogio {
             String segForm = String.format("%02d", ponteiroSegundo.posicao);
             System.out.println("São " +horaForm +":" +minForm +":" +segForm);
         }else{
+
             ponteiroHora.posicao = ponteiroHora.posicao + 12;
             ponteiroMinuto.posicao = ponteiroMinuto.posicao * 5;
             ponteiroSegundo.posicao = ponteiroSegundo.posicao * 5;

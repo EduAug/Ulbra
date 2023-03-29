@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Scanner;
 
 public class Quadrado {
 
@@ -6,10 +7,11 @@ public class Quadrado {
 
     double calcularArea() {
 
-        Lado = 4;
+        System.out.println("Insira a medida do lado");
+        Scanner scan = new Scanner(System.in);
+        Lado = scan.nextDouble();scan.nextLine();
 
         double formula = Math.pow(Lado, 2);
-        System.out.println("A área do quadrado é " + formula);
-        return 1d;
+        return formula;
     }
 }

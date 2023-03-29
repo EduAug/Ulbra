@@ -6,9 +6,9 @@ public class Main {
         Circunferencia circ = new Circunferencia();
         Trapezio trap = new Trapezio();
 
-        quad.calcularArea();
-        tria.calcularArea();
-        circ.calcularArea();
-        trap.calcularArea();
+        System.out.println("A área do quadrado é "+quad.calcularArea());    //Método retorno 1
+        System.out.println("A área do triângulo é " +tria.calcularArea());  //Método retorno 2
+        circ.calcularArea();                                                //Método retorno 3
+        trap.calcularArea();                                                // 3 também
     }
 }

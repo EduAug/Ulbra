@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Triangulo {
 
     double Base;
@@ -5,11 +7,12 @@ public class Triangulo {
 
     double calcularArea(){
 
-        Base = 6;
-        Altura = 17;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Insira a medida da base");
+        Base = scan.nextDouble();scan.nextLine();
+        System.out.println("Insira a altura do triângulo");
+        Altura = scan.nextDouble();scan.nextLine();
 
-        double formula = (Base*Altura)/2;
-        System.out.println("A área do triângulo é "+formula);
-        return 1d;
+        return (Base*Altura)/2;
     }
 }

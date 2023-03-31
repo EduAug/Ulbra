@@ -71,16 +71,16 @@ create procedure alterar_lancamento_livro(IN p_data DATE, IN p_idLiv int)
 BEGIN
 
 		DECLARE novaData DATE;
-        SET novaData = '220330';
+        SET novaData = '220401';
 
 		UPDATE livros SET dataPubli = novaData 
-			WHERE id = p_idLiv AND dataPubli - p_data;
+			WHERE livros.id = p_idLiv AND livros.dataPubli = p_data;
 END$$
 DELIMITER ;
 
 select * from livros;
-call alterar_lancamento_livro('210314',1);
-drop procedure alterar_lancamento_livro;
+call alterar_lancamento_livro('220330',1);
+
 
 
 

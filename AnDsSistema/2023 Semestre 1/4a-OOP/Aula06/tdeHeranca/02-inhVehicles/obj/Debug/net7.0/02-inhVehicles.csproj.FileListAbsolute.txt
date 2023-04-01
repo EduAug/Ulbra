@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\bin\Debug\net7.0\02-inhVehicles.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\bin\Debug\net7.0\02-inhVehicles.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\bin\Debug\net7.0\02-inhVehicles.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\bin\Debug\net7.0\02-inhVehicles.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\bin\Debug\net7.0\02-inhVehicles.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\refint\02-inhVehicles.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\02-inhVehicles.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\02-inhVehicles\obj\Debug\net7.0\ref\02-inhVehicles.dll

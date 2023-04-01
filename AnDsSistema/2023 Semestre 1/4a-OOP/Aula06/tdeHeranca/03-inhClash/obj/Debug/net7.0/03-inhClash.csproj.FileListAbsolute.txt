@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\bin\Debug\net7.0\03-inhClash.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\bin\Debug\net7.0\03-inhClash.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\bin\Debug\net7.0\03-inhClash.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\bin\Debug\net7.0\03-inhClash.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\bin\Debug\net7.0\03-inhClash.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\refint\03-inhClash.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\03-inhClash.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\03-inhClash\obj\Debug\net7.0\ref\03-inhClash.dll

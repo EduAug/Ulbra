@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\bin\Debug\net7.0\01-inhAnimals.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\bin\Debug\net7.0\01-inhAnimals.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\bin\Debug\net7.0\01-inhAnimals.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\bin\Debug\net7.0\01-inhAnimals.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\bin\Debug\net7.0\01-inhAnimals.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\refint\01-inhAnimals.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\01-inhAnimals.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula06\tdeHeranca\01-inhAnimals\obj\Debug\net7.0\ref\01-inhAnimals.dll

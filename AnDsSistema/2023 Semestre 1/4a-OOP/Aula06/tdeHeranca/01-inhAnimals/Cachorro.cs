@@ -9,5 +9,10 @@ namespace _01_inhAnimals
     {
         
         public Cachorro(string nome) : base(nome){}
+
+        public override void Falar(){
+
+            Console.WriteLine("Au");
+        }
     }
 }

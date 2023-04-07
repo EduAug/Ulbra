@@ -8,5 +8,10 @@ namespace _01_inhAnimals
     public class Gato : Animal
     {
         public Gato(string nome) : base(nome){}
+
+        public override void Falar(){
+
+            Console.WriteLine("Miau");
+        }
     }
 }

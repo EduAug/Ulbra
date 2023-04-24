@@ -33,9 +33,9 @@ public class Loja {
 
     public void listarProdutos(){
 
-        System.out.println("----------------------------------------------------------------");
+        System.out.println("================================================================");
         if(produto1 != null){
-            System.out.println(produto1.Nome + " | " + produto1.Preco + " | " + produto1.Quantidade);
+            System.out.println(produto1.Nome + " | " + produto1.getPreco() + " | " + produto1.Quantidade);
         }
         if(produto2 != null){
             System.out.println(produto2.Nome+" | "+produto2.Preco+" | "+produto2.Quantidade);
@@ -43,7 +43,7 @@ public class Loja {
         if(produto3 != null){
             System.out.println(produto3.Nome + " | " + produto3.Preco + " | " + produto3.Quantidade);
         }
-        System.out.println("----------------------------------------------------------------");
+        System.out.println("================================================================");
     }
 
     public void venderProduto(Produto product, int qtd){

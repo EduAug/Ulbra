@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\bin\Debug\net7.0\AtividadeTDE.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\bin\Debug\net7.0\AtividadeTDE.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\bin\Debug\net7.0\AtividadeTDE.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\bin\Debug\net7.0\AtividadeTDE.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\bin\Debug\net7.0\AtividadeTDE.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\refint\AtividadeTDE.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\AtividadeTDE.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2023 Semestre 1\4a-OOP\Aula10\AtividadeTDE\obj\Debug\net7.0\ref\AtividadeTDE.dll

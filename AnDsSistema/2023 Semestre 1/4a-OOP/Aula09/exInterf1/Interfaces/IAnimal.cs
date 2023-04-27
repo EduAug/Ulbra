@@ -8,6 +8,7 @@ namespace exInterf1
     public interface IAnimal
     {
 
+        public string? Name {get;set;}        
 	    string EmitirSom();
     }
 }

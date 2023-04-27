@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace exInterf1
 {
     
-    public class Parrot
+    public class Parrot : IAnimal
     {
 
         public string? Name {get;set;}

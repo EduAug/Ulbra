@@ -7,14 +7,16 @@ public class Program
 	public static void Main()
 	{
 		
-		Cachorro _cachorro = new Cachorro("Scoob","Salsicha");
-		Gato _gato = new Gato("Mingau","Magali");
+		IAnimalEstimacao _cachorro = new Cachorro("Scoob","Salsicha");
+		IAnimalEstimacao _gato = new Gato("Mingau","Magali");
+
 		List<IAnimalEstimacao> listaPets = new List<IAnimalEstimacao>();
 		
 		Console.WriteLine("Pet:		Dono:");
 
 		listaPets.Add(_gato);
 		listaPets.Add(_cachorro);
+		
 		foreach (IAnimalEstimacao pet in listaPets)
 		{
 			

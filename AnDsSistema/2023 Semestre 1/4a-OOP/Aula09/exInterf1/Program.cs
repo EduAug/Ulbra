@@ -6,9 +6,9 @@ public class Program
 	public static void Main()
 	{
 		
-		Dog _dog = new Dog();
-		Cat _cat = new Cat();
-		Parrot _parrot = new Parrot();
+		IAnimal _dog = new Dog();
+		IAnimal _cat = new Cat();
+		IAnimal _parrot = new Parrot();
 		
 		
 		_dog.Name = "Fido";

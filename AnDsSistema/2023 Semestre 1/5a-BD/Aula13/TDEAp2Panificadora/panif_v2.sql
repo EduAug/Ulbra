@@ -151,4 +151,62 @@ SELECT I.descricao as Ingredientes_nao_utilizados
 FROM Ingredientes I 
 WHERE I.Id NOT IN ( Select id_ingrediente FROM Receitas_tem_Ingredientes);
 
+-- f) Trigger para controlar a quantidade dos ingredientes no estoque, sempre que um produto for fabricado
 -- SET autocommit = 0;
+DELIMITER $$
+CREATE TRIGGER trigger_controle_de_estoque_produtos_ingredientes_insert AFTER INSERT ON estoqueVenda
+	FOR EACH ROW
+BEGIN
+
+	UPDATE Ingredientes
+    INNER JOIN Receitas_tem_Ingredientes on Receitas_tem_Ingredientes.id_ingrediente = Ingredientes.Id
+    INNER JOIN Receitas on Receitas.Id = Receitas_tem_Ingredientes.id_receita
+    INNER JOIN Produtos_tem_Receitas on Produtos_tem_Receitas.id_receita = Receitas.Id
+    
+    SET qtd_estoque = qtd_estoque - (Receitas_tem_Ingredientes.qtd_ingrediente * NEW.qtd_venda)
+    
+    WHERE Ingredientes.Id = Receitas_tem_Ingredientes.id_ingrediente AND Produtos_tem_Receitas.id_produto = NEW.id_produto;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER trigger_controle_de_estoque_produtos_ingredientes_estorno AFTER DELETE ON estoqueVenda
+	FOR EACH ROW
+BEGIN
+
+	UPDATE Ingredientes
+    INNER JOIN Receitas_tem_Ingredientes on Receitas_tem_Ingredientes.id_ingrediente = Ingredientes.Id
+    INNER JOIN Receitas on Receitas.Id = Receitas_tem_Ingredientes.id_receita
+    INNER JOIN Produtos_tem_Receitas on Produtos_tem_Receitas.id_receita = Receitas.Id
+    
+    SET qtd_estoque = qtd_estoque + (Receitas_tem_Ingredientes.qtd_ingrediente * OLD.qtd_venda)
+    
+    WHERE Ingredientes.Id = Receitas_tem_Ingredientes.id_ingrediente AND Produtos_tem_Receitas.id_produto = OLD.id_produto;
+END$$
+DELIMITER ;
+
+set autocommit = 0;
+START TRANSACTION;
+select * from Ingredientes;
+insert into estoqueVenda values (3,2,50,"2023-05-06 13:43:27");		-- A trigger funciona bem, apenas fiz em uma transaction para me certificar
+select * from estoqueVenda;
+select * from Ingredientes;
+delete from estoqueVenda where data_producao LIKE "2023-05-06 13:43:27";
+select * from estoqueVenda;
+rollback;
+
+-- g), h)
+Start transaction;
+select * from Receitas_tem_Ingredientes;
+update Receitas_tem_Ingredientes SET qtd_ingrediente = qtd_ingrediente * 0.9 WHERE id_ingrediente = 7;
+select * from Receitas_tem_Ingredientes;
+commit;
+
+-- i), j)
+Start transaction;
+select * from estoqueVenda;
+delete from estoqueVenda WHERE data_producao >= SUBDATE(NOW(), INTERVAL 1 month);
+select * from estoqueVenda;
+rollback;
+
+select * from estoqueVenda;

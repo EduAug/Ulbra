@@ -1,5 +1,12 @@
 public class Peixe extends Animal{
 
+    String especie;
+
+    public Peixe(String _nome, String _especie){
+
+        super(_nome);
+        this.especie = _especie;
+    }
     @Override
     public void andar(){
 

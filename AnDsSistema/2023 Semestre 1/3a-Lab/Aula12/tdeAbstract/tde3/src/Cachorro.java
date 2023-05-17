@@ -1,5 +1,14 @@
 public class Cachorro extends Animal{
 
+    String pedigree;
+
+    public Cachorro(String _nome, String pedig){
+
+        super(_nome);
+
+        this.pedigree = pedig;
+    }
+
     @Override
     public void andar() {
 

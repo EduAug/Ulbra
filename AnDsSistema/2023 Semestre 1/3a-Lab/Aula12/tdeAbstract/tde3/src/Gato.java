@@ -1,5 +1,13 @@
 public class Gato extends Animal{
 
+    String raca;
+
+    public Gato(String _nome, String _raca){
+
+        super(_nome);
+        this.raca = _raca;
+    }
+
     @Override
     public void andar(){
 

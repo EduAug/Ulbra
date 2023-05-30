@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server-web:
+    image: httpd:2.4
+    container_name: 'servidor-http'
+    ports:
+      - "80:80"
+    volumes:
+      - ./http:/usr/local/apache2/htdocs
+#docker-compose up

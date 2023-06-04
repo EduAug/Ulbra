@@ -1,0 +1,52 @@
+1. NoSQL quer dizer Not only SQL, não apenas SQL, logo são bancos de dados não relacionais, orientados a documentos (No caso do mongo), algumas de suas diferenças seriam os "comandos" por exemplo, não há SELECT * FROM <Tabela>, mas db.Collection.find() (específico ao Mongo), bem como sua performance que é mais rápida comparada aos SQL, embora isso venha com a perda das relações entre tabelas. Estrutura de dados seria uma diferença, onde SQL possui Tabelas, Colunas e Tuplas, e os NoSQL podem ser em documentos, grafos, etc. Consultas, como mencionado anteriormente. Transactions, o SQL possui a implementação do ACID, enquanto o NoSQL possui a Eventual Consistency, uma "atualização após algum tempo". Escalabilidade onde (geralmente) SQL é vertical, e NoSQL é horizontal
+
+
+2. Os principais tipos de bancos NoSQL são:
+- Banco de dados de Documentos: MongoDB
+- Banco de dados de Chave-valor: DynamoDB
+- Banco de dados de Colunas: Cassandra
+- Banco de dados de Grafos: Neptune
+
+3. Algumas características do MongoDB são a estrutura de dados em JSON, ou BSON, permitindo a "flexibilização" dos dados, a alta disponibilidade e escalabilidade horizontal (sharding), tal qual os outros NoSQL, permitindo que caso seja necessário possam ser "abertos" mais máquinas virtuais com MongoDB, e "duplicar" dados para que possam ser acessados em diferentes plataformas, indexação para facilitar consultas e pesquisas mais ágeis e efetivas, dentre outras, e alguns casos de uso podem ser encontrados em web apis, armazenamento em grandes empresas que precisam armazenar muitos dados que são acessados frequentemente, etc.
+
+4. A estrutura de dados em SQL é feita em Tabelas, Colunas e Tuplas, podendo referenciar outras tabelas através das keys, enquanto no NoSQL podem ser feitas em Documentos, chave-valor, colunas e grafos, mais flexível porém mais complicado para referenciar outras "tabelas". O modelo de consulta do SQL se dá pelo SQL (Search Query Language)e possui um modelo "fixo" para consultas, especificando o que deve ser retornado, de onde e de que forma ou o que não retornar, enquanto NoSQL vai depender do tipo de banco de dados utilizado, por exemplo do MongoDB, é passada uma instrução de find podendo específicar o que deve estar no retorno por parâmetro, graças ao MQL. No final das contas a escolha entre um e outro vai depender da quantia que precisará ser salva, a frequência que será acessada e o que vai se esperar de "retornos frequentes", por exemplo, onde se aplicará SQL será em uma regra de negócio que exige retornos frequentes de dados cruzados, uma escola a exemplo, precisará de um SQL.
+
+5. A estrutura de um objeto JSON é relativamente simples, chaves ({}) envolvem o objeto, os atributos devem estar entre aspas ("atributo"), seguidos de dois-pontos e o valor atribuído ao atributo (:valor), caso exista mais de um atributo, coloque uma vírgula e então insira o outro atributo com seu valor. Embora não seja como um XML com seu extenso cabeçalho, é possível inserir informações complexas no JSON, por meio de arrays e/ou objetos dentro dos objetos JSON, como por exemplo no MongoDB
+{
+	"pokéballs":[
+	{
+		"tipo":"Common",
+		"catchRate":1.0,
+		"qtd":7
+	},
+	{
+		"tipo":"Great",
+		"catchRate":1.5,
+		"qtd":13
+	},
+	{
+		"tipo":"Dusk",
+		"catchRate":3.5,
+		"qtd":13
+	}
+	],
+	"medicine":[
+	{
+		"tipo":"Potion",
+		"healsFlat":20,
+		"qtd":6
+	},
+	{
+		"tipo":"Super",
+		"healsFlat":50,
+		"qtd":13
+	},
+	{
+		"tipo":"Max",
+		"healsFlat":9999,
+		"qtd":1
+	}
+	],
+	"keyItems":["Bicycle","PokéFlute","VsSeeker"]
+}
+essa é uma simples collection de uma Mochila de pokémon, possuindo pokébolas, itens de cura e utilitários, e de forma simples ilustra como seriam os objetos de objetos em JSON, ainda seria possível, por exemplo, adicionar um modificador para as pokébolas como a DuskBall, que possui 3.5x de efetividade em cavernas e durante a noite, talvez por outro array ou objeto que apontasse ao "cenário" e definiria a chance de sucesso.

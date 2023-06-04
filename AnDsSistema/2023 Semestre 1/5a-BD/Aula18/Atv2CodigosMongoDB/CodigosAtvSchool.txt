@@ -1,0 +1,86 @@
+use SchoolDB
+db.createCollection("Students")
+
+db.Students.insertMany(
+[
+	{
+		"firstName":"Alice",
+		"lastName":"Prado",
+		"age":17,
+		"grade":12
+	},
+	{
+		"firstName":"Bruno",
+		"lastName":"Müller",
+		"age":14,
+		"grade":9
+	},
+	{
+		"firstName":"Anderson",
+		"lastName":"Amorim",
+		"age":9,
+		"grade":6
+	}
+])
+
+db.Students.find()
+
+db.Students.find({ age: { $gt: 15 } })
+
+db.Students.updateOne(
+	{
+		"firstName":"Alice"
+	},
+ 	{
+		$set:
+			{
+				age:16
+			}
+	}
+)
+
+db.Students.find({"firstName":"Alice"})
+
+
+
+db.Students.deleteOne({"firstName":"Anderson"})
+
+db.Students.find()
+
+
+
+db.createCollection("Courses")
+
+db.Courses.insertOne(
+{
+	"courseName":"Data Science",
+	"teacherName":"Axl",
+	"students":
+		[
+			{
+				"firstName":"Jack",
+				"lastName":"Valentine"
+			},
+			{
+				"firstName":"Martin",
+				"lastName":"Wilbur"
+			},
+			{
+				"firstName":"Joel",
+				"lastName":"Stratson"
+			}
+
+		]
+})
+
+db.collection.find(
+{
+	students:
+		{
+    			$elemMatch: 
+				{
+      					firstName: "Martin"
+    				}
+  		}
+})
+

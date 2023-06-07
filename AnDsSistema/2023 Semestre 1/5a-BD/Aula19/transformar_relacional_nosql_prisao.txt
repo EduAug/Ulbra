@@ -1,0 +1,25 @@
+Detento:
+{
+  _id: ObjectId("648100954fefe30a8c17c858"),
+  Nome: 'João',
+  Bloco: 'A',
+  Cela: '101'
+}
+
+Visitante:
+{
+  _id: ObjectId("648101dc4fefe30a8c17c859"),
+  Nome: 'Maria',
+  Relacionamento: 'Amiga',
+  Visitas: [
+    {
+      NomeDetento: 'João',
+      DataVisita: '2023-05-01',
+      HoraEntrada: '09:00',
+      HoraSaida: '10:30'
+    }
+  ]
+}
+
+Não há coleção "visitas", uma vez que essa é integrada à Visitante, onde é possível encontrar a data da visita, nome do detento e horários de entrada e saída.
+Cogitei inserir "visita" em Detento, porém preferi inserir essa tabela em Visitante, uma vez que as pesquisas de "visita" seriam feitas em Visitante.

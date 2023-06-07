@@ -11,6 +11,6 @@ public class Main {
             }
         }
 
-        System.out.println("O maior valore é "+maior);
+        System.out.println("O maior valor é "+maior);
     }
 }

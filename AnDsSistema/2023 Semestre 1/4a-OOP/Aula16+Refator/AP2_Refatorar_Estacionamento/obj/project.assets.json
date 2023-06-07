@@ -1593,11 +1593,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16\\AP2-Orientacao-Objetos\\AP2_Refatorar_Estacionamento\\AP2_Refatorar_Estacionamento.csproj",
+      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16+Refator\\AP2_Refatorar_Estacionamento\\AP2_Refatorar_Estacionamento.csproj",
       "projectName": "AP2_Refatorar_Estacionamento",
-      "projectPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16\\AP2-Orientacao-Objetos\\AP2_Refatorar_Estacionamento\\AP2_Refatorar_Estacionamento.csproj",
+      "projectPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16+Refator\\AP2_Refatorar_Estacionamento\\AP2_Refatorar_Estacionamento.csproj",
       "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16\\AP2-Orientacao-Objetos\\AP2_Refatorar_Estacionamento\\obj\\",
+      "outputPath": "C:\\Users\\Pichau\\Desktop\\Container0\\Ulbra\\Ulbra\\AnDsSistema\\2023 Semestre 1\\4a-OOP\\Aula16+Refator\\AP2_Refatorar_Estacionamento\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"

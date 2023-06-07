@@ -1,3 +1,4 @@
+1.
 use SchoolDB
 db.createCollection("Students")
 
@@ -25,8 +26,10 @@ db.Students.insertMany(
 
 db.Students.find()
 
+2.
 db.Students.find({ age: { $gt: 15 } })
 
+3.
 db.Students.updateOne(
 	{
 		"firstName":"Alice"
@@ -42,13 +45,13 @@ db.Students.updateOne(
 db.Students.find({"firstName":"Alice"})
 
 
-
+4.
 db.Students.deleteOne({"firstName":"Anderson"})
 
 db.Students.find()
 
 
-
+5.
 db.createCollection("Courses")
 
 db.Courses.insertOne(

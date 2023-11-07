@@ -4,7 +4,9 @@ def openConnection():
     conn = mysql.connector.connect(
     host="db4free.net",
     port=3306,
-    
+    database="linkedin123",
+    user="natanhmc",
+    password="1q2w3e4r5t"
     )
     conn.start_transaction()
 

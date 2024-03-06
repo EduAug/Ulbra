@@ -3,11 +3,11 @@ package com.example.crudspring;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class UserController{
+public class UsrController {
 
     private final UserRepository userRepo;
 
-    public UserController(UserRepository _userRepo){
+    public UsrController(UserRepository _userRepo){
         userRepo = _userRepo;
     }
 

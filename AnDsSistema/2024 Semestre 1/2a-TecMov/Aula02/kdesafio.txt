@@ -1,0 +1,133 @@
+1--
+fun main(args: Array<String>) {
+    var entryVals = arrayOf(10,2,4,5,6,15,7);
+    var totalOfArray = 0;
+    for(val1 in entryVals){
+        totalOfArray += val1;
+    }
+    
+    print(totalOfArray/7);
+}
+
+
+2--
+fun main(args: Array<String>) {
+    var entryVals = arrayOf(10,2,4,5,6,15,7);
+    
+    fun getAvg(vararg values: Int): Int {
+        var totalOfArray = 0;
+        for(val1 in values){
+            totalOfArray += val1;
+        }
+        return totalOfArray / values.size;
+    }
+    print(getAvg(*entryVals.toIntArray()));
+}
+
+
+3--
+fun main(args: Array<String>) {
+    var entryVals = arrayOf(10,2,4,5,6,15,7);
+    
+    fun getAvg(vararg values: Int): Int {
+        var evenArray = arrayOf<Int>();
+        for(newNumber in values){
+            if(newNumber % 2 == 0){
+                evenArray += newNumber;
+            }else{
+                continue;
+            }
+        }
+        
+        return (evenArray.sum() / evenArray.size);
+    }
+    print(getAvg(*entryVals.toIntArray()));
+}
+
+
+4--
+fun main(args: Array<String>) {
+    var entryVals = arrayOf(10,2,4,5,6,15,7);
+    
+    fun checkIn(vararg values: Int, check: Int): Boolean {
+        var wasFound : Boolean = false;
+        for(dBase in values){
+            if(dBase == check){
+                wasFound = true;
+                break;
+            }else{
+                continue;
+            }
+        }
+
+        return wasFound;
+    }
+    print(checkIn(*entryVals.toIntArray(), check = 15));
+}
+
+
+5--
+fun main(args: Array<String>) {
+    var entryVals = arrayOf(16,23,5,8,23,15,4,79,16);
+    
+    fun checkIn(vararg values: Int, check: Int): Int {
+        var counter = 0;
+        for(entryValue in values){
+            if(entryValue == check){
+                counter += 1;
+            }
+        }
+
+        return counter;
+    }
+    print("O número informado foi encontrado ${checkIn(*entryVals.toIntArray(), check = 7)} vez(es).");
+}
+
+
+6--
+fun main(args: Array<String>) {    
+    fun fizzBuzz(): Unit {
+        var wasByFifteen : Boolean;
+        for(i in 1..100){
+            wasByFifteen = false;
+            if(i%5 == 0 && i%3 == 0){
+                println("Fizz Buzz ($i)");
+                wasByFifteen = true;
+            }
+            if(!wasByFifteen){
+                if(i%3 == 0){
+                    println("Fizz ($i)");
+                }else if(i%5 == 0){
+                    println("Buzz ($i)");
+                }else{
+                    println(i);
+                }
+            }
+        }
+    }
+    fizzBuzz();
+}
+
+
+7-- //Obs: Não informar um número maior que o limite do array original para o parâmetro "check"
+fun main(args: Array<String>) {
+    //var entryVals = Array<Int>;
+    var entryVals = arrayOf(16,23,5,8,23);
+    
+    fun checkIn(vararg values: Int, check: Int): Array<Int> {
+        if(values.isEmpty()){
+            return emptyArray();
+        }
+        var returnable = Array(check) {0};
+        var sortedValues = values.sorted().toTypedArray();
+        
+        for(i in 0 until minOf(check, sortedValues.size)){
+            returnable[i] = sortedValues[i];
+        }
+        for(j in returnable){
+            println(j);
+        }
+        return returnable;
+    }
+    checkIn(*entryVals.toIntArray(), check = 4);
+}

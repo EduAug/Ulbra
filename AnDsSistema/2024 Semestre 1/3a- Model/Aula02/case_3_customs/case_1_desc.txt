@@ -1,0 +1,10 @@
+Ator principal: Cliente (Ou ainda, usuário / utilizador)
+O primeiro caso seria para a elaboração de um sistema para recomendação e reprodução de músicas, semelhante a forma na qual era possível ir até uma "locadora", por assim dizer, ouvir um trecho e então comprar o disco.
+
+1. Buscar por gênero : Em um primeiro momento, o cliente poderá inserir um gênero de sua preferência, e serão recomendadas músicas do mesmo gênero com alguns fatores em consideração;
+2. Blacklist : Semelhante a seleção de gênero, agora o usuário PODE selecionar quais artistas, gêneros ou álbuns não gostaria que estivessem presentes no resultado da pesquisa;
+3. Informar playlist / álbum : O cliente então PODERÁ informar uma playlist ou álbum ao sistema, e esse verificará, com base no conteúdo desse, além do gênero informado e itens a evitar, quais músicas recomendar ao cliente;
+4. Efetuar login ou cadastro : Para que a playlist seja gerada especialmente ao cliente, ele deverá estar com seu cadastro efetuado, para que possa salvar os resultados se desejar, ou deixar com que a playlist gerada seja apagada após o "consumo";
+5. Seleção de músicas : Então a pesquisa deve trazer um resultado enxuto ao usuário, que pode adicionar essas "músicas finais" às playlists que desejar ou escutar apenas num momento;
+6. Compartilhar resultados : O usuário então poderá optar por compartilhar sua "própria playlist" feita nos seus conformes com seus amigos, ou não;
+7. Captura de dados : O sistema pegará os dados levantados pelo usuário, como os itens "filtrados" ou músicas mais ouvidas dentre as recomendadas e armazenará, a fim de recomendar mais certos artistas, por exemplo.

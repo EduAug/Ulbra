@@ -1,0 +1,10 @@
+Por fim há um caso para uma plataforma de um clube. Para o caso de uso em particular, num escopo simplificado que diz respeito em parte às atividades e cobranças
+
+
+1. Verificar fatura: Cliente : O cliente poderá acessar suas faturas em aberto, verificando valor dessas;
+2. Efetuar pagamento de faturas: Cliente : O cliente então, poderá optar por pagar por alguma fatura que esteja pendente, com o método de pagamento proposto que lhe for melhor;
+3. Monitorar acesso ao clube: Cliente : O cliente poderá também, acessar uma janela que constará em quais atividades/salas do clube esteve, graças a um tipo de "histórico de eventos comparecidos";
+4. Visualizar atividades: Cliente : Em outra janela, será possível conferir todas as atividades que tomarão lugar no clube naquele dia (Como torneio de golfe a tarde, show da banda local de forró a noite, etc.);
+5. Feedback de atividades: Cliente : O cliente poderá deixar sua opinião nos eventos que compareceu, deixando comentários e/ou uma nota para avaliar;
+6. Registrar evento: Cliente "avançado": Clientes com permissões adicionais, ou com certo nível dentro do clube, poderão organizar eventos em certas salas/locais em certos horários;
+7. Registrar presença: Cliente "avançado" (Responsável pela atividade) : O cliente responsável pela atividade poderá marcar a presença dos usuários que compareceram ao seu evento, tão simples como o clique de um botão (A fim de contabilizar resultados à gestão do clube);

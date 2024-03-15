@@ -1,0 +1,9 @@
+Ator principal: Usuário
+Sistema para gerenciamento de afazeres, ou tarefas, que funcionará semelhante ao gerenciamento de "quests" de algum RPG
+
+1. Criar cadastro/logar: Para manter o progresso nas atividades, e permitir que o usuário efetue o acesso em dispositivos que não sejam o "normal";
+2. Criar tarefa: O usuário poderá inserir uma nova atividade, conforme alguns "modelos prontos" no app com dificuldades, por assim dizer, pre configuradas (Por exemplo, "Tirar o lixo" Dificuldade: Fácil // "Fazer manutenção do carro" Dificuldade: Difícil) ou alguma customizada caso não se encontre dentre os modelos;
+3. Ver tarefas: Clicando no "card" da tarefa, é possível ver os detalhes daquela "missão", como descrição, prazo para cumprir essa tarefa, tal como "ouro e experiência" obtidos ao concluir a tarefa;
+4. Cumprir tarefa: Em outra janela, o usuário poderá marcar a tarefa como concluída, "recebendo" o ouro e experiência daquela tarefa, com base no tempo restante. (Ouro e experiência seriam utilizados para customizações no sistema/app);
+5. Excluir tarefa: O usuário poderá, também, cancelar alguma tarefa, caso desista dessa, não recebendo nada;
+6. Customizar sistema: Com o ouro e experiência obtidos ao concluir tarefas, o usuário pode acessar um sistema semelhante a uma loja, e comprar cores, fontes e formas para suas tarefas, a fim de customizar a aplicação e ter certo incentivo;

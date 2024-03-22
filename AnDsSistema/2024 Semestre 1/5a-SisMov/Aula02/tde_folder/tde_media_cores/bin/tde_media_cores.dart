@@ -7,9 +7,7 @@ double getAvg(List<int> values){
       return 0.0;
     }
     int totalSum = 0;
-    for(int i = 0; i < values.length; i++){
-      totalSum += values[i];
-    }
+    values.forEach((element)=>totalSum+=element);
     return totalSum / values.length;
   }
 

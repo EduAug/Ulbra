@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnviaEmailActivity"
+    android:background="#aeb1b5"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@id/bird"
+        android:gravity="center"
+        android:text="Mensageiro"
+        android:textColor="#c75014"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/bird"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/bird"
+        app:layout_constraintBottom_toTopOf="@id/etAssunto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        />
+    
+    <EditText
+        android:id="@+id/etAssunto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="#363232"
+        android:hint="Assunto"
+        android:gravity="bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColorHint="#363232"
+        android:hint="Destinatário"
+        app:layout_constraintTop_toBottomOf="@id/etAssunto"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/etDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textColorHint="#363232"
+        android:hint="Conteúdo"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Enviar"
+        android:backgroundTint="#c75014"
+        android:textColor="#363232"
+        app:layout_constraintTop_toBottomOf="@id/etDescricao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

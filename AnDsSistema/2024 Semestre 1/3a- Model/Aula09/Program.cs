@@ -40,14 +40,20 @@ namespace Sorveteria {
             Quantidade = quantidade;
         }
 
-        public void SubtrairQuantidadeItem()
+        public void SubtrairQuantidadeItem(int itemId)
         {
-            this.Quantidade -= 1;
+            if (ItemId == itemId)
+            {
+                Quantidade -= 1;
+            }
         }
 
-        public void AdicionarQuantidadeItem()
+        public void AdicionarQuantidadeItem(int itemId)
         {
-            this.Quantidade += 1;
+            if (ItemId == itemId)
+            {
+                Quantidade += 1;
+            }
         }
     }
     public class Ingrediente
@@ -84,9 +90,9 @@ namespace Sorveteria {
             Status = status;
             Pedido = pedido;
         }
-        public void AdicionarIngrediente()
+        public void AdicionarIngrediente(int idIngediente)
         {
-            Console.WriteLine("Adicionando ingrediente ao item...");
+            IdIngrediente = idIngediente;
         }
 
         public void ModificarStatus()
@@ -122,9 +128,9 @@ namespace Sorveteria {
             Funcionarios = funcs;
         }
 
-        public void AdicionarValor()
+        public void AdicionarValor(decimal valor)
         {
-            this.ValorTotal += 10m;
+            this.ValorTotal += valor;
         }
 
         public void EncaminharParaFuncionario()
@@ -132,14 +138,17 @@ namespace Sorveteria {
             Console.WriteLine($"Encaminhado para o funcionário {this.IdFuncionario}");
         }
 
-        public void AdicionarItemPedido()
+        public void AdicionarItemPedido(int idItPed)
         {
-            Console.WriteLine("Adicionando item ao pedido...");
+            IdItemPedido = idItPed;
         }
 
         public void EmitirPedido()
         {
-            Console.WriteLine($"Pedido emitido para cliente {Cliente.Nome}");
+            Console.WriteLine($"" +
+                $"Pedido emitido para cliente {Cliente.Nome}" +
+                { foreach (var F in Funcionarios) { Console.WriteLine(F.Nome) } }
+                $"Item {IdItemPedido}");
         }
     }
     public class Pagamento
@@ -160,8 +169,13 @@ namespace Sorveteria {
             ValorTotalPagamento = valorTotalPagamento;
             Pedido = pedido;
         }
-        public void AdicionarPedido()
+        public void AdicionarPedido(int idPedido)
         {
+            this.IdPedido = idPedido;
+            if(Pedido.Id == idPedido)
+            {
+                Pedido = Pedido;
+            }
             Console.WriteLine("Adicionando pedido extra ao pagamento...");
         }
 
@@ -177,8 +191,11 @@ namespace Sorveteria {
             return MetodoPagamento.Dinheiro;
         }
 
-        public void EfetuarPagamento()
+        public void EfetuarPagamento(MetodoPagamento metPag, decimal valTot, DateTime stamp)
         {
+            this.MetodoPagamento = metPag;
+            this.ValorTotalPagamento = valTot + CalcularValorTotal();
+            this.DataPagamento = stamp;
             Console.WriteLine($"Efetuado pagamento de {CalcularValorTotal()} no método {SelecionarMetodoPagamento()}");
         }
     }
@@ -223,8 +240,9 @@ namespace Sorveteria {
             this.Mesa = -1;
         }
 
-        public void ChamarAtendente()
+        public void ChamarAtendente(Pedido decisao, Funcionario atendente)
         {
+            atendente.JuntarPedido(decisao);
             Console.WriteLine($"Chamando funcionário para mesa {Mesa} [SOLICITADO POR {Nome}]...");
         }
     }
@@ -266,8 +284,9 @@ namespace Sorveteria {
             Console.WriteLine("Em preparação...");
         }
 
-        public void JuntarPedido()
+        public void JuntarPedido(Pedido pegar)
         {
+            this.Pedidos.Add(pegar);
             Console.WriteLine("Pronto para levar à mesa.");
         }
     }

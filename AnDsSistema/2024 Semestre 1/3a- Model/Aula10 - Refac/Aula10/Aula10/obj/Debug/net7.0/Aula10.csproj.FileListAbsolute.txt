@@ -1,0 +1,14 @@
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\bin\Debug\net7.0\Aula10.exe
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\bin\Debug\net7.0\Aula10.deps.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\bin\Debug\net7.0\Aula10.runtimeconfig.json
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\bin\Debug\net7.0\Aula10.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\bin\Debug\net7.0\Aula10.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\refint\Aula10.dll
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.pdb
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\Aula10.genruntimeconfig.cache
+C:\Users\Pichau\Desktop\Container0\Ulbra\Ulbra\AnDsSistema\2024 Semestre 1\3a- Model\Aula10 - Refac\Aula10\Aula10\obj\Debug\net7.0\ref\Aula10.dll

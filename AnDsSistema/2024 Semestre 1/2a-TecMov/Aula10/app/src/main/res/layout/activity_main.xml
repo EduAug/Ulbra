@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#4d5599"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/product_item"/>
+        tools:listitem="@layout/product_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

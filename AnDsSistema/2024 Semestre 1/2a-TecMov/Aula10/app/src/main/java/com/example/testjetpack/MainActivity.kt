@@ -1,30 +1,29 @@
 package com.example.testjetpack
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    private val mainViewModel: MainViewModel by viewModels()
-    private lateinit var adapter : ProdAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val recycler = findViewById<RecyclerView>(R.id.rcProduct)
-        val items = mainViewModel.getProds()
+        val toolbar = findViewById<Toolbar>(R.id.my_toolbar)
+        val menuBottom = findViewById<BottomNavigationView>(R.id.bottomMenu)
+        val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
 
-        adapter = ProdAdapter(items, ::goToDetail)
-        recycler.adapter = adapter
+        NavigationUI.setupWithNavController(menuBottom, navController)
+        setSupportActionBar(toolbar)
+        configureToolbar(title = "Home", enableBackButton = false)
     }
 
-    private fun goToDetail(item: Product) {
-        Intent(this, DetailActv::class.java).apply {
-            putExtra("data", item)
-            startActivity(this)
-        }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

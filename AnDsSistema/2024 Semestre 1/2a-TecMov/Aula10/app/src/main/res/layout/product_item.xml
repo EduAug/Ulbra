@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="20dp"
-
     app:cardBackgroundColor="@color/cardview_dark_background"
-    app:cardCornerRadius="13dp"
+    app:cardCornerRadius="20dp"
     app:cardElevation="90dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
+
         <ImageView
-            android:id="@+id/imgProd"
+            android:id="@+id/imgProduct"
             android:layout_width="140dp"
-            android:layout_height="180dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@mipmap/ic_launcher"/>
-        
-        <TextView
-            android:id="@+id/tvProdName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#b5b5b5"
-            android:textSize="36sp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toTopOf="@id/imgProd"
-            app:layout_constraintStart_toEndOf="@id/imgProd"
-            tools:text="Produto"/>
+            tools:src="@mipmap/ic_launcher" />
+
 
         <TextView
-            android:id="@+id/tvProdPrice"
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CBB05E"
+            android:textSize="40sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@id/imgProduct"
+            app:layout_constraintStart_toEndOf="@id/imgProduct"
+            tools:text="Produto" />
+
+        <TextView
+            android:id="@+id/tvProductPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:textColor="#edaf3b"
-            android:textSize="24sp"
-            android:layout_marginStart="20dp"
-            app:layout_constraintStart_toEndOf="@id/imgProd"
-            app:layout_constraintTop_toBottomOf="@id/tvProdName"
+            android:textColor="#B2ACAC"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvProductName"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName"
             tools:text="R$ 299,00" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.cardview.widget.CardView>

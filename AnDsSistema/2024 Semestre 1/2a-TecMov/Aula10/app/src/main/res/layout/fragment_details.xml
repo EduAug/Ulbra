@@ -33,10 +33,19 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="40sp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@id/card"
         app:layout_constraintStart_toStartOf="@id/card"
         app:layout_constraintTop_toTopOf="@id/card"
         tools:text="Produto" />
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#070505" />
 
     <TextView
         android:id="@+id/tvProductPrice"

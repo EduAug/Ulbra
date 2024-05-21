@@ -1,0 +1,5 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/cardview_dark_background"></solid>
+    <corners android:topLeftRadius="30dp" android:topRightRadius="30dp"/>
+</shape>

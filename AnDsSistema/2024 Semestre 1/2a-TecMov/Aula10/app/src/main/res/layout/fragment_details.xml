@@ -58,4 +58,16 @@
         app:layout_constraintTop_toBottomOf="@id/tvProductName"
         tools:text="R$ XXX,XX" />
 
+    <TextView
+        android:id="@+id/tvProductDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C1C1C1"
+        android:textSize="28sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/card"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/tvProductPrice"
+        tools:text="Descricao Descricao Descricao Descricao Desc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

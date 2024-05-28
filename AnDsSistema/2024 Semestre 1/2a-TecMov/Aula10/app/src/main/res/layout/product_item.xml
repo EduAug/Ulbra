@@ -3,7 +3,7 @@
 <data>
     <variable
         name="prdct"
-        type="com.example.testjetpack.Product" />
+        type="com.example.testjetpack.data.models.Product" />
 </data>
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -41,7 +41,7 @@
                 android:textColor="#CBB05E"
                 android:textSize="40sp"
                 app:layout_constraintStart_toEndOf="@id/imgProduct"
-                app:layout_constraintTop_toTopOf="@id/imgProduct"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:text="@{prdct.name}" />
 
             <TextView

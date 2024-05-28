@@ -1,4 +1,4 @@
-package com.example.testjetpack
+package com.example.testjetpack.presentation.extensions
 
 import androidx.appcompat.app.AppCompatActivity
 

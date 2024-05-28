@@ -1,17 +1,14 @@
-package com.example.testjetpack
+package com.example.testjetpack.presentation.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.PopupMenu
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.testjetpack.Product
+import com.example.testjetpack.R
+import com.example.testjetpack.data.models.Product
 import com.example.testjetpack.databinding.ProductItemBinding
-import org.w3c.dom.Text
 
 class ProdAdapter(
     private val items: MutableList<Product>,

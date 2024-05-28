@@ -1,4 +1,4 @@
-package com.example.testjetpack
+package com.example.testjetpack.presentation.bindingadapters
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

@@ -1,4 +1,4 @@
-package com.example.testjetpack
+package com.example.testjetpack.presentation.fragments
 
 import android.os.Build
 import android.os.Bundle
@@ -11,6 +11,9 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.testjetpack.R
+import com.example.testjetpack.presentation.extensions.configureToolbar
+import com.example.testjetpack.data.models.Product
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailsFragment : Fragment() {
@@ -18,7 +21,6 @@ class DetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_details, container, false)
     }
 
@@ -35,6 +37,7 @@ class DetailsFragment : Fragment() {
         val name = view.findViewById<TextView>(R.id.tvProductName)
         val price = view.findViewById<TextView>(R.id.tvProductPrice)
         val image = view.findViewById<ImageView>(R.id.imgProduct)
+        val desc = view.findViewById<TextView>(R.id.tvProductDesc)
 
         Glide.with(this)
             .load(prodBundle?.urlImage)
@@ -42,6 +45,7 @@ class DetailsFragment : Fragment() {
             .into(image)
         name.text = prodBundle?.name
         price.text = prodBundle?.price
+        desc.text = prodBundle?.desc
     }
 
 }

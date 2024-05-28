@@ -1,4 +1,4 @@
-package com.example.testjetpack
+package com.example.testjetpack.presentation.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,11 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.testjetpack.presentation.viewmodels.MainViewModel
+import com.example.testjetpack.R
+import com.example.testjetpack.presentation.extensions.configureToolbar
 import com.example.testjetpack.databinding.FragmentHome2Binding
+import com.example.testjetpack.presentation.adapters.ProdAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
@@ -22,7 +26,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentHome2Binding.inflate(layoutInflater)
         return binding.root
     }

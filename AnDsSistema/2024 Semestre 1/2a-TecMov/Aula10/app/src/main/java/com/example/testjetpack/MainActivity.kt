@@ -2,7 +2,6 @@ package com.example.testjetpack
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.example.testjetpack.databinding.ActivityMainBinding
@@ -16,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root) //Setta o content view pro "root"
                                   //o root sendo o xml "activity main"
-                                  //logo, dá para catar os ids de lá
+                                  //logo, dá para catar os ids de lá.
+                                  //Ademais, o "root" é uma View
 
         val toolbar = bind.myToolbar
         toolbar.title = "Home"

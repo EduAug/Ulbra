@@ -56,6 +56,6 @@
         app:layout_constraintEnd_toEndOf="@id/card"
         app:layout_constraintStart_toStartOf="@id/card"
         app:layout_constraintTop_toBottomOf="@id/tvProductName"
-        tools:text="R$ 250,00" />
+        tools:text="R$ XXX,XX" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

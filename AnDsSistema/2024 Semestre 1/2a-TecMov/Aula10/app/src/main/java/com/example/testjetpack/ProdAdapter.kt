@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.testjetpack.Product
+import com.example.testjetpack.databinding.ProductItemBinding
+import org.w3c.dom.Text
 
 class ProdAdapter(
     private val items: MutableList<Product>,
@@ -21,47 +23,39 @@ class ProdAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         this.context = parent.context
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.product_item, parent, false)
-
-        return ViewHolder(view)
+        val bind = ProductItemBinding.inflate(LayoutInflater.from(context), parent, false)
+        return ViewHolder(bind)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.rootView.setOnLongClickListener {
-            showPopupMenu(it, position)
-            true
-        }
-
-        holder.itemView.setOnClickListener {
-            goToDetail(items[position])
-        }
-
-        Glide.with(holder.itemView.context).load(items[position].urlImage).centerCrop()
-            .into(holder.imageProduct)
-
-        holder.nameProduct.text = items[position].name
-        holder.priceProduct.text = items[position].price
-
+       holder.bind(items[position])
     }
 
     override fun getItemCount() = items.size
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageProduct: ImageView = itemView.findViewById(R.id.imgProduct)
-        val nameProduct: TextView = itemView.findViewById(R.id.tvProductName)
-        val priceProduct: TextView = itemView.findViewById(R.id.tvProductPrice)
+    inner class ViewHolder(private val binding: ProductItemBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(product: Product){
+            binding.prdct = product
+
+            binding.root.setOnLongClickListener{
+                showPopupMenu(it,product)
+                false
+            }
+
+            binding.root.setOnClickListener{
+                goToDetail(product)
+            }
+        }
     }
 
-    private fun showPopupMenu(view: View, position: Int) {
+    private fun showPopupMenu(view: View, itm: Product) {
         PopupMenu(context, view).apply {
             setOnMenuItemClickListener { item ->
                 when (item.itemId) {
                     R.id.removeItem -> {
-                        removerItem(items[position])
+                        removerItem(itm)
                         true
                     }
-
                     else -> false
                 }
             }

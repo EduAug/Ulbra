@@ -5,21 +5,26 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.testjetpack.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var bind: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val toolbar = findViewById<Toolbar>(R.id.my_toolbar)
-        val menuBottom = findViewById<BottomNavigationView>(R.id.bottomMenu)
+        bind = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bind.root) //Setta o content view pro "root"
+                                  //o root sendo o xml "activity main"
+                                  //logo, dá para catar os ids de lá
+
+        val toolbar = bind.myToolbar
+        toolbar.title = "Home"
+        val menuBottom = bind.bottomMenu
         val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
 
         NavigationUI.setupWithNavController(menuBottom, navController)
         setSupportActionBar(toolbar)
-        configureToolbar(title = "Home", enableBackButton = false)
     }
 
     override fun onSupportNavigateUp(): Boolean {

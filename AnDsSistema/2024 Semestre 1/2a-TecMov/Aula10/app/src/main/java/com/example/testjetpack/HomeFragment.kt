@@ -9,11 +9,12 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.RecyclerView
+import com.example.testjetpack.databinding.FragmentHome2Binding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
 
+    private lateinit var binding: FragmentHome2Binding
     private lateinit var adapter: ProdAdapter
     private lateinit var productViewModel: MainViewModel
 
@@ -22,7 +23,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home2, container, false)
+        binding = FragmentHome2Binding.inflate(layoutInflater)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -32,13 +34,15 @@ class HomeFragment : Fragment() {
         activity?.findViewById<BottomNavigationView>(R.id.bottomMenu)?.visibility = View.VISIBLE
         productViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
-        // Recyclerview
-        val recycler = view.findViewById<RecyclerView>(R.id.rcListOfProducts)
+        val recycler = binding.rcListOfProducts
         val items = productViewModel.getProds()
 
         adapter = ProdAdapter(items) {
             val bundle = bundleOf("product" to it)
-            findNavController().navigate(R.id.action_homeFragment_to_detailProductFragment, bundle)
+            findNavController().navigate(
+                R.id.action_homeFragment_to_detailProductFragment,
+                bundle
+            )
         }
 
         recycler.adapter = adapter

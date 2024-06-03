@@ -5,23 +5,24 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.testjetpack.R
-import com.example.testjetpack.presentation.extensions.configureToolbar
 import com.example.testjetpack.data.models.Product
+import com.example.testjetpack.databinding.FragmentDetailsBinding
+import com.example.testjetpack.presentation.extensions.configureToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DetailsFragment : Fragment() {
+    private lateinit var binding: FragmentDetailsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_details, container, false)
+        binding = FragmentDetailsBinding.inflate(layoutInflater)
+        return binding.root
     }
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
@@ -34,10 +35,10 @@ class DetailsFragment : Fragment() {
 
         activity?.findViewById<BottomNavigationView>(R.id.bottomMenu)?.visibility = View.GONE
 
-        val name = view.findViewById<TextView>(R.id.tvProductName)
-        val price = view.findViewById<TextView>(R.id.tvProductPrice)
-        val image = view.findViewById<ImageView>(R.id.imgProduct)
-        val desc = view.findViewById<TextView>(R.id.tvProductDesc)
+        val name = binding.tvProductName
+        val price = binding.tvProductPrice
+        val image = binding.imgProduct
+        val desc = binding.tvProductDesc
 
         Glide.with(this)
             .load(prodBundle?.urlImage)

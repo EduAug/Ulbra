@@ -2,33 +2,38 @@ package com.example.testjetpack
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.navigateUp
 import com.example.testjetpack.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-    private lateinit var bind: ActivityMainBinding
-
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var navController: NavController
+    private lateinit var appBarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        bind = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(bind.root) //Setta o content view pro "root"
-                                  //o root sendo o xml "activity main"
-                                  //logo, dá para catar os ids de lá.
-                                  //Ademais, o "root" é uma View
+        val toolbar = binding.myToolbar
+        val menuBottom = binding.bottomMenu
 
-        val toolbar = bind.myToolbar
-        toolbar.title = "Home"
-        val menuBottom = bind.bottomMenu
-        val navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
+        navController = Navigation.findNavController(this, R.id.my_nav_host_fragment)
+        appBarConfiguration = AppBarConfiguration(navGraph = navController.graph)
 
-        NavigationUI.setupWithNavController(menuBottom, navController)
+
         setSupportActionBar(toolbar)
+        NavigationUI.setupWithNavController(menuBottom, navController)
+        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
+        return findNavController(R.id.my_nav_host_fragment).navigateUp(appBarConfiguration)
     }
 }

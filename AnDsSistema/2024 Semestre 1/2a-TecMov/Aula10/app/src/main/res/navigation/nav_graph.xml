@@ -5,30 +5,33 @@
     android:id="@+id/navigation"
     app:startDestination="@id/homeFragment">
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.testjetpack.presentation.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home2" >
-        <action
-            android:id="@+id/action_homeFragment_to_detailProductFragment"
-            app:destination="@id/detailProductFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_addFragment"
-            app:destination="@id/addFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailProductFragment"
-        android:name="com.example.testjetpack.presentation.fragments.DetailsFragment"
-        android:label="fragment_detail_product"
-        tools:layout="@layout/fragment_details" >
-        <action
-            android:id="@+id/action_detailProductFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-    </fragment>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.testjetpack.DetailsActivity"
+        android:label="Details"
+        tools:layout="@layout/fragment_details"/>
+
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.testjetpack.presentation.fragments.AdicionarFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_adicionar" />
+        android:label="Add"
+        tools:layout="@layout/fragment_adicionar" >
+    <action
+            android:id="@+id/action_adicionarFragment_to_homeFragment"
+            app:destination="@+id/homeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.testjetpack.presentation.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailsActivity"
+            app:destination="@+id/detailsActivity"/>
+    </fragment>
+
 </navigation>

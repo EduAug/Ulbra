@@ -11,13 +11,18 @@ import com.example.testjetpack.data.models.Product
 import com.example.testjetpack.databinding.ProductItemBinding
 
 class ProdAdapter(
-    private val items: MutableList<Product>,
-    private val goToDetail: (item: Product) -> Unit
-) :
-    RecyclerView.Adapter<ProdAdapter.ViewHolder>() {
+    private val goToDetail: (product: Product) -> Unit,
+    private val removeItem: (product: Product) -> Unit
+) : RecyclerView.Adapter<ProdAdapter.ViewHolder>() {
 
+    private var listProds: List<Product> = emptyList()
+    private lateinit var bind: ProductItemBinding
     private lateinit var context: Context
 
+    fun setUpList(lista: List<Product>){
+        this.listProds = lista
+        notifyDataSetChanged()
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         this.context = parent.context
         val bind = ProductItemBinding.inflate(LayoutInflater.from(context), parent, false)
@@ -25,10 +30,9 @@ class ProdAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-       holder.bind(items[position])
+       holder.bind(listProds[position])
     }
-
-    override fun getItemCount() = items.size
+    override fun getItemCount() = listProds.size
 
     inner class ViewHolder(private val binding: ProductItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product){
@@ -50,7 +54,7 @@ class ProdAdapter(
             setOnMenuItemClickListener { item ->
                 when (item.itemId) {
                     R.id.removeItem -> {
-                        removerItem(itm)
+                        removeItem(itm)
                         true
                     }
                     else -> false
@@ -59,10 +63,5 @@ class ProdAdapter(
             inflate(R.menu.menu_popup)
             show()
         }
-    }
-
-    fun removerItem(product: Product) {
-        this.items.remove(product)
-        notifyDataSetChanged()
     }
 }

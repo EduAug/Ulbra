@@ -39,8 +39,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:textColor="#CBB05E"
-                android:textSize="40sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@id/imgProduct"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="@{prdct.name}" />
 
@@ -48,11 +49,12 @@
                 android:id="@+id/tvProductPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="#B2ACAC"
-                android:textSize="28sp"
-                app:layout_constraintEnd_toEndOf="@+id/tvProductName"
-                app:layout_constraintStart_toStartOf="@+id/tvProductName"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/imgProduct"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvProductName"
                 tools:text="@{prdct.price}" />
         </androidx.constraintlayout.widget.ConstraintLayout>

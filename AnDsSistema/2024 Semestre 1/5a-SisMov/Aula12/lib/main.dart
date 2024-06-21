@@ -1,8 +1,15 @@
-import 'package:aula12_api/models/character.dart';
-import 'package:aula12_api/services/characters_api.dart';
+import 'package:aula12_api/screen/home_screen.dart';
+import 'package:aula12_api/screen/login_screen.dart';
+import 'package:aula12_api/services/firebase/auth/auth_firebase.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -14,72 +21,28 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  CharactersApi api = CharactersApi();
-  late List<Character> _characters;
-  late List<Character> _charFilter;
-
-  @override
-  void initState() {
-    super.initState();
-    _fetchAllChars();
-  }
-
-  Future<List<Character>> _fetchAllChars() async {
-    _characters = await api.fetchChars();
-    _charFilter = _characters;
-
-    return _characters;
-  }
-
-  _filterCharacters(String filtro){
-    setState(() {
-      _charFilter = _characters.where((element) => element.name.toLowerCase().contains(filtro.toLowerCase())).toList();
-    });
-  }
-
   @override
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Personagens"),
-          backgroundColor: Colors.purple,
-        ),
-        body: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: TextField(
-                onChanged: (inputString){
-                  _filterCharacters(inputString);
-                },
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: "Filtro",
-                ),
-              ),
-            ),
-            FutureBuilder<List<Character>>(future: api.fetchChars(), builder: (context,snapshot){
-              if(snapshot.hasData){
-                return Expanded(
-                  child: ListView.separated(itemBuilder: (context, ind) {
-                    return ListTile(
-                      subtitle: Text(_charFilter[ind].name),
-                      leading: Image.network(_charFilter[ind].image),
-                    );
-                  }, separatorBuilder: (_, __){
-                      return const Divider();
-                  },
-                      itemCount: _charFilter.length
-                  ),
-                );
-              }
-              return const CircularProgressIndicator();
-            }),
-          ],
-        ),
-      ),
+      home: InitializeApp()
     );
+  }
+}
+
+class InitializeApp extends StatelessWidget {
+  final AuthFirebase _authFirebase = AuthFirebase();
+  InitializeApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(stream: _authFirebase.user, builder: (context, snapshot){
+      if(snapshot.connectionState == ConnectionState.waiting){
+        return const Center(child: CircularProgressIndicator(),);
+      }else if(snapshot.hasData && snapshot.data!.email.isNotEmpty){
+        return const HomeScreen();
+      }
+      return LoginScreen();
+    });
   }
 }

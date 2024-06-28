@@ -1,38 +1,37 @@
 import 'dart:async';
-
-import 'package:aula12_api/models/user.dart';
+import 'package:ap2_pokedex/utils/results.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-import '../../../utils/results.dart';
+import 'package:flutter/rendering.dart';
+import '../../../models/trainer.dart';
 
 class AuthFirebase{
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseAuth _auth= FirebaseAuth.instance;
 
-  Stream<UserModel> get user{
+  Stream<Trainer> get user{
     return _auth.authStateChanges().map((user){
-      return UserModel(email: user?.email ?? "");
+      return Trainer(email: user?.email ?? "");
     });
   }
+
   Future<void> register(String email, String password) async{
-    try {
+    try{
       await _auth.createUserWithEmailAndPassword(email: email, password: password);
-    }catch (e) {
-      throw e;
+    }catch(e){
+      debugPrint(e.toString());
     }
   }
 
   final StreamController<Results> _resultsLogin= StreamController<Results>.broadcast();
-
   Stream<Results> get resultsLogin=> _resultsLogin.stream;
 
   Future<void> signIn(String email, String password) async{
-    _resultsLogin.add(Loading());
-    try {
+    _resultsLogin.add(LoadingResults());
+    try{
       await _auth.signInWithEmailAndPassword(email: email, password: password);
       _resultsLogin.add(SuccessResults());
-    }catch (e) {
-      _resultsLogin.add(ErrorResults());
-      throw e;
+    }on FirebaseAuthException catch (exception, e){
+      _resultsLogin.add(ErrorResults(code: exception.code));
+      debugPrint(e.toString());
     }
   }
 

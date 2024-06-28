@@ -4,8 +4,8 @@ import 'package:ap2_pokedex/models/pokemon.dart';
 import 'package:http/http.dart' as http;
 
 class PokeApi {
-  Future<List<Pokemon>> fetchMons() async{
-    final response = await http.get(Uri.parse('$BASE_URL/pokemon?offset=493&limit=156'));
+  Future<List<Pokemon>> fetchMons(int offset, int limit) async{
+    final response = await http.get(Uri.parse('$BASE_URL/pokemon?offset=$offset&limit=$limit'));
     if(response.statusCode == 200){
       List listReturn = jsonDecode(response.body)['results'];
 

@@ -1,4 +1,3 @@
-import 'package:aula12_api/screen/home_screen.dart';
 import 'package:aula12_api/screen/login_screen.dart';
 import 'package:aula12_api/services/firebase/auth/auth_firebase.dart';
 import 'package:flutter/material.dart';
@@ -39,8 +38,6 @@ class InitializeApp extends StatelessWidget {
     return StreamBuilder(stream: _authFirebase.user, builder: (context, snapshot){
       if(snapshot.connectionState == ConnectionState.waiting){
         return const Center(child: CircularProgressIndicator(),);
-      }else if(snapshot.hasData && snapshot.data!.email.isNotEmpty){
-        return const HomeScreen();
       }
       return LoginScreen();
     });

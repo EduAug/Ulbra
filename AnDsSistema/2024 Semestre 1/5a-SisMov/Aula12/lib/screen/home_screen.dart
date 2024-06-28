@@ -1,3 +1,4 @@
+import 'package:aula12_api/screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import '../models/character.dart';
 import '../services/characters_api.dart';
@@ -45,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
               onPressed: (){
                 _auth.signOut();
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> LoginScreen()));
               },
               icon: const Icon(Icons.exit_to_app)
           )

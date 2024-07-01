@@ -15,7 +15,6 @@ import com.example.testjetpack.data.models.Product
 import com.example.testjetpack.databinding.FragmentHome2Binding
 import com.example.testjetpack.presentation.adapters.ProdAdapter
 import com.example.testjetpack.presentation.bindingadapters.Results
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

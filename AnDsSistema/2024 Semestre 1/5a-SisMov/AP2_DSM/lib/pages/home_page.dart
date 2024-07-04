@@ -29,7 +29,10 @@ class _HomePageState extends State<HomePage> {
   Future<List<Pokemon>> _fetchAllChars() async{
     final generationData= generationOffsets[widget.selectedGen]!;
     characters = await pokeApi.fetchMons(generationData['offset']!, generationData['limit']!);
-    charFilter = characters;
+    setState(() {
+      charFilter = characters;
+    });
+
     return characters;
   }
 
@@ -42,6 +45,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final generationData = generationOffsets[widget.selectedGen]!;
+    final offset= generationData['offset']!;
+    final limit= generationData['limit']!;
+
     return Scaffold(
       backgroundColor: Colors.black54,
       appBar: AppBar(
@@ -53,6 +60,10 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(onPressed: (){
               _auth.signOut();
+              setState((){
+                characters.clear();
+                charFilter.clear();
+              });
               Navigator.pushReplacement(context, MaterialPageRoute(
                   builder: (context)=> const LoginPage())
               );
@@ -63,7 +74,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
             child: FutureBuilder<List<Pokemon>>(
-                future: _fetchAllChars(),
+                future: pokeApi.fetchMons(offset, limit),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     return ListView.separated(

@@ -3,14 +3,12 @@ class Pokemon {
   final String image;
   final List<String> typing;
   final int dexNumber;
-  final int regionalDexNumber;
 
   const Pokemon({
     required this.name,
     required this.image,
     required this.typing,
     required this.dexNumber,
-    required this.regionalDexNumber
   });
 
   factory Pokemon.fromAPI(Map<String,dynamic> get){
@@ -21,13 +19,11 @@ class Pokemon {
       .map((e) => e['type']['name'] as String)
       .toList();
     int dexNumber = get['id'];
-    int regionalDexNumber = dexNumber - 494;
     return Pokemon(
         name: name,
         image: image,
         typing: typing,
         dexNumber: dexNumber,
-        regionalDexNumber: regionalDexNumber,
     );
   }
 

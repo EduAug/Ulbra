@@ -37,7 +37,7 @@ class PokemonListItem extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              '#${pokemon.regionalDexNumber} / #${pokemon.dexNumber}',
+              '# ${pokemon.dexNumber}',
               style: TextStyle(color: txColor),
             ),
             const SizedBox(width: 40),

@@ -145,7 +145,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text("Sign Up")
                   ),
                   SizedBox(
-                    height: 333, // Adjust the height as needed
+                    height: 333,
                     child: GridView.count(
                       crossAxisCount: 2,
                       childAspectRatio: 4,

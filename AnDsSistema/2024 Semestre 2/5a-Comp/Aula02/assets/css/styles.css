@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: lightyellow;
+    padding: 20px;
+}
+header h1{
+    text-align: center;
+}
+main{
+    padding: 2% 10%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    margin-top: 20px;
+}
+
+.sect{
+    height: 30vh;
+}
+.sect p{
+    margin-top: 20px;
+}

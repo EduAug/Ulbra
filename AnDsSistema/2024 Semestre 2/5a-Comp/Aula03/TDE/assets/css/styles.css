@@ -1,0 +1,14 @@
+ul{
+    list-style: none;
+}
+ul li:hover{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table {
+    border: 2px solid black;
+}
+th{
+    padding: 8px;
+}

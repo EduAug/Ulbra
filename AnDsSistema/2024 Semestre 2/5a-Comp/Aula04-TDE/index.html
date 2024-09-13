@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDE Aula05</title>
+    <!--<script src="./scripts.js"></script>-->
+</head>
+<body>
+    <button id="idBotao">Gerar Dados</button>
+    <ul id="idDesejado">
+    </ul>
+</body>
+<script>
+    const data= [
+    {nome: "Daniel", idade: 24},
+    {nome: "Taumiel", idade: 66},
+    {nome: "Donadel", idade: 31},
+    {nome: "Pharrell", idade: 51},
+    {nome: "Duracell", idade: 36},
+    {nome: "Nathaniel", idade: 8}
+    ];
+
+    const exibicao= document.getElementById("idDesejado");
+    const botao= document.getElementById("idBotao");
+
+    botao.addEventListener("click",()=> {
+        exibicao.innerHTML+= data.map(i=> {return`<li>${i.nome} - ${i.idade}</li>`})
+    })
+</script>
+</html>

@@ -1,0 +1,9 @@
+.profileBorder{
+    border: 1px solid grey;
+    border-radius: 7px;
+    width: 80vw;
+    margin-bottom: 20px;
+}
+h2{
+    margin: 10px;
+}

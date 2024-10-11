@@ -1,0 +1,18 @@
+.btn-cep{
+    height: 50px;
+    font-size: large;
+}
+
+input{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    height: 40px;
+    font-size: large;
+    padding-left: 16px;
+    margin-left: 14px;
+}
+
+label{
+    font-size: large;
+}

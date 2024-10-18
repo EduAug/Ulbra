@@ -1,0 +1,58 @@
+*{
+    color: rgb(0, 0, 0);
+    margin: auto 0;
+}
+header img{
+    height: auto;
+}
+header h1{
+    flex-grow: 1;
+    margin: 0;
+    color: black;
+}
+
+header{
+    background-color:dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+img{
+    max-width: 150px;
+}
+
+p, h1, h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2EM;
+}
+
+.btnLocal{
+    padding: 14px 40px;
+    margin: 10px;
+    background-color: dodgerblue;
+    border-style: none;
+    border-radius: 14px;
+}
+
+.h1Page{
+    color: black;
+    text-align: left;
+    margin: 50px;
+}
+
+.picEvento{
+    width: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.userData{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    max-height: auto;
+    padding: 20px;
+}

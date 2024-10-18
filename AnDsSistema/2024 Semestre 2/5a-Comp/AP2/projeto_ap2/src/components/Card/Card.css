@@ -1,0 +1,17 @@
+.container{
+    background-color: gray;
+    max-width: 300px;
+    border-radius: 14px;
+    padding: 20px;
+    padding-bottom: 100px;
+    box-shadow: 0 5px 10px black;
+    margin: 50px;
+    margin-bottom: 20px; 
+}
+
+.cardP{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+}

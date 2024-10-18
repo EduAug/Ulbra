@@ -1,10 +1,14 @@
 import Card from './Card/Card'
 import LocalUser from './LocalUser/LocalUser';
 import '../index.css'
+import FormQuestionario from './FormQuestionario';
+import { useState } from 'react';
 
 function Page({name, cep, evento, eventoFoto}){
 
+    const [people, setPeople]= useState([])
 
+    const addToList= (element)=> { console.log(element); setPeople([...people, element])}
     const teste= {
         pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1200px-Placeholder_view_vector.svg.png",
         name: "Ninguém",
@@ -32,7 +36,7 @@ function Page({name, cep, evento, eventoFoto}){
         <h1 className='h1Page'>Seja bem vindo, {name}</h1>
         <div className="row">
             <div className="col-md-6">
-                <LocalUser cep={"90460210"}/>
+                <LocalUser cep={cep}/>
             </div>
             <div className="col-md-6"></div>
         </div>
@@ -40,25 +44,25 @@ function Page({name, cep, evento, eventoFoto}){
             <div className="row">
                 <div className="col-md-4">
                     <div className="row">
-                        <div className="col-md-6">
-                            <Card pic={ teste.pic } name={ teste.name } phone={ teste.phone } isStudent={ teste.isStudent } hasPaid={ teste.hasPaid }/>
-                        </div>
-                        <div className="col-md-6">
-                            <Card pic={ outro.pic } name={ outro.name } phone={ outro.phone } isStudent={ outro.isStudent } hasPaid={ outro.hasPaid }/>
-                        </div>
-                        <div className="col-md-6">
-                            <Card pic={ teste.pic } name={ teste.name } phone={ teste.phone } isStudent={ teste.isStudent } hasPaid={ teste.hasPaid }/>
-                        </div>
-                        <div className="col-md-6">
-                            <Card pic={ outro.pic } name={ outro.name } phone={ outro.phone } isStudent={ outro.isStudent } hasPaid={ outro.hasPaid }/>
-                        </div>
+                        {
+                            people.map((element, i)=> (
+                                <div className="col-md-6" key={i}>
+                                    <Card 
+                                    pic={ element.pic } 
+                                    name={ element.name } 
+                                    phone={ element.phone } 
+                                    isStudent={ element.isStudent } 
+                                    hasPaid={ element.hasPaid }/>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
 
                 <div className="col-md-3"></div>
 
                 <div className="col-md-5">
-                    <p>Paramegiana</p>
+                    <FormQuestionario addPersonToPeople={ addToList }/>
                 </div>
             </div>
         </div>

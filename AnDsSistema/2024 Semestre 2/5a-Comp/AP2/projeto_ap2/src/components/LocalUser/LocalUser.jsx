@@ -3,28 +3,33 @@ import { useEffect, useState } from 'react';
 function LocalUser({ cep }){
     const [showDesc, setShowDesc]= useState(false)
     const [cepJson, setCepJson]= useState()
-    const cepUser= `https://viacep.com.br/ws/${cep}/json/`;
+    const [hasData, setHasData]= useState(false)
+    const cepUser= `https://viacep.com.br/ws/${cep}/json/`
     
-    useEffect(()=> {
-        async function getCep() {
+    async function getCep() {
             
-            try{
-                const resp= await fetch(cepUser)
-                const json = await resp.json()
-                setCepJson(json)
-            }catch{
-                console.log("Error fetching cep")
-            }    
-        }
+        try{
+            const resp= await fetch(cepUser)
+            const json = await resp.json()
+            setCepJson(json)
+            setHasData(true)
+            !showDesc
+        }catch{
+            console.log("Error fetching cep")
+        }    
+    }
 
-        if(cepUser != null){
-            getCep()
-        }
+    if(cepUser != null){
+        getCep()
+    }
+
+    useEffect(()=> {
+        console.log(hasData);
     },[])
 
     return(
         <>
-                <button className='btnLocal ms-5' onClick={()=> setShowDesc(!showDesc)}>
+                <button className='btnLocal ms-5' onClick={()=> hasData ? setShowDesc(!showDesc) : getCep()}>
                     {showDesc ? "Ocultar Localização" : "Exibir Localização"}
                 </button>{
                 showDesc

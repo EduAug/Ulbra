@@ -16,72 +16,90 @@ function FormQuestionario({ addPersonToPeople }){
             hasPaid: isPago,
             pic: formData.get("photo")
         }
-         
+
         addPersonToPeople(newPerson)
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>Nome</label>
-                <input
+        <form onSubmit={handleSubmit} className="form-container">
+        <div>
+            <label>Nome</label>
+            <input
                 name="name"
                 type="text"
-                required/>
-            </div>
-            <div>
-                <label>Telefone</label>
-                <input
+                required
+            />
+        </div>
+        <div>
+            <label>Telefone</label>
+            <input
                 name="phone"
-                type="text"
-                required/>
-            </div>
+                type="tel"
+                pattern='\d{5}-\d{4}'
+                title='XXXXX-XXXX'
+                required
+            />
+        </div>
 
-            <div className="radio-cont-1">
-                <label>É egresso?</label>
+        <div className="radio-cont">
+            <label>É egresso?</label>
+            <div className="radio-option">
                 <label>Sim</label>
                 <input
-                name="egresso"
-                type="radio"
-                value="true"
-                checked={isEgresso}
-                onChange={()=> setEgresso(true)}/>
+                    name="egresso"
+                    type="radio"
+                    value="true"
+                    checked={isEgresso}
+                    onChange={()=> setEgresso(true)}
+                />
+            </div>
+            <div className="radio-option">
                 <label>Não</label>
                 <input
-                name="egresso"
-                type="radio"
-                value="false"
-                checked={!isEgresso}
-                onChange={()=> setEgresso(false)}/>
+                    name="egresso"
+                    type="radio"
+                    value="false"
+                    checked={!isEgresso}
+                    onChange={()=> setEgresso(false)}
+                />
             </div>
+        </div>
 
-            <div className="radio-cont-2">
-                <label>Foi pago?</label>
+        <div className="radio-cont">
+            <label>Foi pago?</label>
+            <div className="radio-option">
                 <label>Sim</label>
                 <input
-                name="pagamento"
-                type="radio"
-                value="true"
-                checked={isPago}
-                onChange={()=> setPago(true)}/>
+                    name="pagamento"
+                    type="radio"
+                    value="true"
+                    checked={isPago}
+                    onChange={()=> setPago(true)}
+                />
+            </div>
+            <div className="radio-option">
                 <label>Não</label>
                 <input
-                name="pagamento"
-                type="radio"
-                value="false"
-                checked={!isPago}
-                onChange={()=> setPago(false)}/>
+                    name="pagamento"
+                    type="radio"
+                    value="false"
+                    checked={!isPago}
+                    onChange={()=> setPago(false)}
+                />
             </div>
+        </div>
 
+        <div>
             <label>Foto</label>
-            <div>
             <input
                 name="photo"
                 type="text"
-                required/>
-            </div>
-            <button className='btn-form' type="submit">Cadastrar</button>
-        </form>
+                required
+            />
+        </div>
+
+        <button className='btn-form' type="submit">Cadastrar</button>
+    </form>
     );
 }
 export default FormQuestionario;

@@ -1,33 +1,46 @@
-form>div>input[type="text"]{
+form {
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: start;
+    padding: 50px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 14px 7px 6px darkgrey;
+}
+
+form>div>input[type="text"], form>div>input[type="tel"], form>div>input[type="radio"] {
     border: none;
     border-radius: 14px;
     font-size: 20px;
     height: 45px;
     margin-bottom: 20px;
+    display: block;
+    width: 100%;
 }
 
-form{
-    background-color: lightgray;
-    border-radius: 10px;
-    text-align: start;
-    padding: 50px;
+.radio-cont {
+    margin-bottom: 20px;
 }
 
-.btn-form{
-    width: 300px;
+.radio-option {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.radio-option label {
+    margin-right: 5px;
+}
+
+.btn-form {
+    width: 100%;
     height: 50px;
     border-radius: 14px;
     border: none;
     background-color: dodgerblue;
     transition: 0.1s ease-in;
 }
-.btn-form:hover{
-    background-color: rgb(16, 111, 207);
-}
 
-.radio-cont-1{
-    margin: 20px;
-}
-.radio-cont-2{
-    margin: 20px;
+.btn-form:hover {
+    background-color: rgb(16, 111, 207);
 }

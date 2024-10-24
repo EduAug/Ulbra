@@ -24,7 +24,7 @@ function LocalUser({ cep }){
     }
 
     useEffect(()=> {
-        console.log(hasData);
+        getCep();
     },[])
 
     return(

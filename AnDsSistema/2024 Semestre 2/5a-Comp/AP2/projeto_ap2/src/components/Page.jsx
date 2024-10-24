@@ -5,7 +5,7 @@ import FormQuestionario from './FormQuestionario';
 import { useState } from 'react';
 
 function Page({name, cep, evento, eventoFoto}){
-    const teste= {
+    /*const teste= {
         pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1200px-Placeholder_view_vector.svg.png",
         name: "Ninguém",
         phone: "51912345678",
@@ -18,9 +18,9 @@ function Page({name, cep, evento, eventoFoto}){
         phone: "51912345678",
         isStudent: true,
         hasPaid: false
-    }
+    }*/
 
-    const [people, setPeople]= useState([teste,outro])
+    const [people, setPeople]= useState([/*teste,outro*/])
 
     const addToList= (element)=> { 
         const pessoasAlfabeticas= [...people, element].sort((a,b)=> a.name.localeCompare(b.name))

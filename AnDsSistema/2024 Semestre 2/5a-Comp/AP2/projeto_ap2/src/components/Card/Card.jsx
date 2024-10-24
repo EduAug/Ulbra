@@ -7,7 +7,7 @@ function Card({pic, name, phone, isStudent, hasPaid}){
             <ProfilePic pic={ pic } alt={ name+' Picture'}/>
             <p className='cardP'>{name}</p>
             <p className='cardP'>{phone}</p>
-            <p className='cardP'>{isStudent ? "Aluno" : "Egresso"}</p>
+            <p className='cardP'>{isStudent ? "Egreso" : "Aluno"}</p>
             <p className='cardP'>{hasPaid ? "Confirmado" : "Não confirmado"}</p>
         </div>
         </>

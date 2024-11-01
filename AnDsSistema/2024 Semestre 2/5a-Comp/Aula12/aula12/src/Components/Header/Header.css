@@ -1,0 +1,48 @@
+.active {
+    background-color: red;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.container {
+    background-color: grey;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    background-color: red;
+    align-self: center;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 6px;
+    border: 4px solid black;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation li{
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li a{
+    font-size: 30px;
+}
+
+li {
+    font-size: 34px;
+}
+a:hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

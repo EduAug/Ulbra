@@ -4,6 +4,7 @@ import SobrePage from '../Pages/Sobre/SobrePage';
 import ContatoPage from '../Pages/Contato/ContatoPage';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PessoasPage from '../Pages/Pessoas/Pessoas';
 
 function CustomRoute(){
     return(
@@ -14,6 +15,7 @@ function CustomRoute(){
             <Route path='/' element={<HomePage />}/>
             <Route path='/contato' element={<ContatoPage />}/>
             <Route path='/sobre' element={<SobrePage />}/>
+            <Route path='/pessoas' element={<PessoasPage/>}/>
             <Route path='*' element={<ErrorPage />}/>
           </Routes>
         </BrowserRouter>

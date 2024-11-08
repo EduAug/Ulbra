@@ -9,7 +9,7 @@ function ContatoPage(){
 
     return(
         <>
-        <h1>Olá, novo contato</h1>
+        <h1>Registre um novo contato</h1>
             <Formulario metodoParaAdicionarNaLista={falseAdicionarAoMock}/>
         </>
     );

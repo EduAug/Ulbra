@@ -3,6 +3,7 @@ import './Header.css';
 import HomePage from '../../Pages/Home/HomePage';
 import ContatoPage from '../../Pages/Contato/ContatoPage';
 import SobrePage from '../../Pages/Sobre/SobrePage';
+import PessoasPage from '../../Pages/Pessoas/Pessoas';
 
 function Header(){
     return(
@@ -20,6 +21,9 @@ function Header(){
                     </li>
                     <li>
                         <NavLink to={'/sobre'} element={<SobrePage/>}>Sobre</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/pessoas'} element={<PessoasPage/>}>Pessoas</NavLink>
                     </li>
                 </ul>
             </nav>

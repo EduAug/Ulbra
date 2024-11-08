@@ -1,0 +1,7 @@
+.center-container{
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6vh;
+}

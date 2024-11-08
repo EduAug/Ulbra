@@ -1,14 +1,19 @@
+.form-container{
+    margin: 5vh auto;
+}
+
 button {
     width: 50%;
     height: 4vh;
     border: none;
     border-radius: 14px;
     margin-top: 12px;
-    background-color: skyblue;
+    background-color: red;
     transition: 0.3s ease-in-out;
 }
 button:hover {
-    background-color: lightblue;
+    background-color: lightcoral;
+    color: white;
     scale: 1.1;
 }
 

@@ -1,18 +1,27 @@
+import { useState } from 'react';
 import './Formulario.css';
 
 function Formulario({ metodoParaAdicionarNaLista }) {
-    
+
+    const [nome, setNome] = useState();
+    const [foto, setFoto] = useState();
+    const [fato, setFato] = useState();
+
     function handleSubmit(event){
         event.preventDefault();
-        const formData = new FormData(event.target);
         const pessoaNova = 
         {
-            nome: formData.get('nome'),
-            foto: formData.get('foto'),
-            fato: formData.get('fato')
+            nome: nome,
+            foto: foto,
+            fato: fato
         }
         metodoParaAdicionarNaLista(pessoaNova);
+        setNome('');
+        setFato('');
+        setFoto('');
     }
+
+
     return(
     <>
         <form onSubmit={handleSubmit} className="form-container">
@@ -21,7 +30,10 @@ function Formulario({ metodoParaAdicionarNaLista }) {
             <div className="campo">
                 <input
                     name="nome"
+                    value={nome}
                     type="text"
+                    id='nome'
+                    onChange={(e)=> setNome(e.target.value)}
                     required
                 />
             </div>
@@ -32,7 +44,10 @@ function Formulario({ metodoParaAdicionarNaLista }) {
             <div className="campo">
                 <input
                     name="foto"
+                    value={foto}
                     type="text"
+                    id='foto'
+                    onChange={(e)=> setFoto(e.target.value)}
                     required
                 />
             </div>
@@ -43,6 +58,9 @@ function Formulario({ metodoParaAdicionarNaLista }) {
             <div className="campo">
                 <input
                     name="fato"
+                    value={fato}
+                    id='fato'
+                    onChange={(e)=> setFato(e.target.value)}
                     type="text"
                 />
             </div>

@@ -1,10 +1,13 @@
 import Header from '../Components/Header/Header'
 import HomePage from '../Pages/Home/HomePage';
-import SobrePage from '../Pages/Sobre/SobrePage';
 import ContatoPage from '../Pages/Contato/ContatoPage';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PessoasPage from '../Pages/Pessoas/Pessoas';
+import ProductPage from '../Pages/Products/Products';
+import ProductDetailsPage from '../Pages/ProductDetails/ProductDetails.jsx';
+import EditarPage from '../Pages/Editar/Editar.jsx';
+import CadastrarPage from '../Pages/Cadastrar/CadastrarPage.jsx';
 
 function CustomRoute(){
     return(
@@ -14,8 +17,11 @@ function CustomRoute(){
           <Routes>
             <Route path='/' element={<HomePage />}/>
             <Route path='/contato' element={<ContatoPage />}/>
-            <Route path='/sobre' element={<SobrePage />}/>
+            <Route path='/cadastrar' element={<CadastrarPage />}/>
             <Route path='/pessoas' element={<PessoasPage/>}/>
+            <Route path='/products' element={<ProductPage/>}/>
+            <Route path='/products/:id' element={<ProductDetailsPage/>}/>
+            <Route path='/products/editar/:id' element={<EditarPage/>}/>
             <Route path='*' element={<ErrorPage />}/>
           </Routes>
         </BrowserRouter>

@@ -2,8 +2,9 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import HomePage from '../../Pages/Home/HomePage';
 import ContatoPage from '../../Pages/Contato/ContatoPage';
-import SobrePage from '../../Pages/Sobre/SobrePage';
 import PessoasPage from '../../Pages/Pessoas/Pessoas';
+import ProductPage from '../../Pages/Products/Products';
+import CadastrarPage from '../../Pages/Cadastrar/CadastrarPage';
 
 function Header(){
     return(
@@ -20,10 +21,13 @@ function Header(){
                         <NavLink to={'/contato'} element={<ContatoPage/>}>Contato</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/sobre'} element={<SobrePage/>}>Sobre</NavLink>
+                        <NavLink to={'/cadastrar'} element={<CadastrarPage/>}>Cadastrar</NavLink>
                     </li>
                     <li>
                         <NavLink to={'/pessoas'} element={<PessoasPage/>}>Pessoas</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/products'} element={<ProductPage/>}>Produtos</NavLink>
                     </li>
                 </ul>
             </nav>

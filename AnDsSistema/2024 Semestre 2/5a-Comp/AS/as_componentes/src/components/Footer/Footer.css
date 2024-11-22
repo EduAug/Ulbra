@@ -1,0 +1,13 @@
+.foot-container{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(7, 7, 44);
+    color: white;
+    text-align: center;
+    padding: 3vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

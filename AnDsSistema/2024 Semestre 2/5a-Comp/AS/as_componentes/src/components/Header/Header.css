@@ -1,0 +1,59 @@
+.active {
+    background-color: white;
+    color: rgb(7, 7, 44);
+    border-radius: 6px;
+    padding: 20px;
+}
+.inactive {
+    background-color: rgb(7, 7, 44);
+    color: red;
+    border-radius: 6px;
+}
+
+
+
+.header-container {
+    background-color: rgb(7, 7, 44);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-self: center;
+    color: white;
+    font-size: 2em;
+    padding: 40px;
+    border-radius: 28px;
+    border: 4px black dotted;
+}
+
+.navi ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navi li{
+    display: flex;
+    list-style: none;
+}
+
+.navi ul li a{
+    font-size: 30px;
+}
+
+li {
+    font-size: 34px;
+}
+a:hover{
+    color: rgb(7, 7, 44);
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 6px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

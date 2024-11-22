@@ -1,0 +1,46 @@
+.card-container{
+    background-color: rgb(7, 7, 44);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    width: 15vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-imagem{
+    min-width: 100%;
+}
+
+.card-item-completo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item-completo h1, h3{
+    color: white;
+}
+
+.card-nome{
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.card-valor{
+    margin: 2vh;
+    font-size: 1em;
+}
+
+hr{
+    width: 80%;
+    height: 3px;
+    background-color: red;
+    border: none;
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,0 +1,22 @@
+.tralhas-container {
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6vh;
+    padding-bottom: 9vh;
+}
+
+.titulo-page{
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.wrap-card:hover{
+    scale: 1.1;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    box-shadow: 0 0 50px black;
+    cursor: zoom-in;
+    transition: 0.1s ease-in-out;
+}

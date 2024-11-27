@@ -19,7 +19,7 @@ function Header(){
                         <NavLink to={'/produtos'} element={<ProdutosPage/>}>Produtos</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/cadastrar'} element={<CriarProdutosPage/>}>Adicionar</NavLink>
+                        <NavLink to={'/criar-produto'} element={<CriarProdutosPage/>}>Adicionar</NavLink>
                     </li>
                 </ul>
             </div>

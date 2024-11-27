@@ -11,6 +11,7 @@
 
 .card-imagem{
     min-width: 100%;
+    max-width: 200px;
 }
 
 .card-item-completo{

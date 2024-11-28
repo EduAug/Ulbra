@@ -15,18 +15,11 @@
       "photo_url": "http://picsum.photos/200"
     },
     {
-      "name": "Meu Nome",
+      "name": "Meu Nome 2",
       "price": "54,60",
       "description": "Minha Descrição",
-      "photo_url": "http://picsum.photos/200",
+      "photo_url": "http://picsum.photos/295",
       "id": "a8e7"
-    },
-    {
-      "name": "Novo add",
-      "price": "Ilimitado",
-      "description": "Com texto em Impact",
-      "photo_url": "https://picsum.photos/200",
-      "id": "7816"
     },
     {
       "name": "Um terceiro",
@@ -55,6 +48,12 @@
       "description": "Com picsum de 240",
       "photo_url": "http://picsum.photos/209",
       "id": "d9b5"
+    },
+    {
+      "id": "72eb",
+      "name": "Testes 35",
+      "price": "valor",
+      "photo_url": "http://picsum.photos/914"
     }
   ]
 }

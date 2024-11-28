@@ -1,7 +1,4 @@
 import { NavLink } from "react-router-dom";
-import HomePage from "../../pages/Home/Home";
-import ProdutosPage from "../../pages/Produtos/Produtos";
-import CriarProdutosPage from "../../pages/Criar/CriarProdutos";
 import './Header.css'
 
 function Header(){
@@ -11,15 +8,24 @@ function Header(){
             <div className="titulo">SEMESTRALha</div>
 
             <div className="navi">
-                <ul className={(isActive) => isActive ? 'active' : 'inactive'}>
+                <ul>
                     <li>
-                        <NavLink to={'/'} element={<HomePage/>}>Home</NavLink>
+                        <NavLink 
+                        to={'/'} 
+                        className={({ isActive }) => isActive ? 'active' : 'inactive'}
+                        >Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/produtos'} element={<ProdutosPage/>}>Produtos</NavLink>
+                        <NavLink 
+                        to={'/produtos'} 
+                        className={({ isActive }) => isActive ? 'active' : 'inactive'}
+                        >Produtos</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/criar-produto'} element={<CriarProdutosPage/>}>Adicionar</NavLink>
+                        <NavLink 
+                        to={'/criar-produto'} 
+                        className={({ isActive }) => isActive ? 'active' : 'inactive'}
+                        >Adicionar</NavLink>
                     </li>
                 </ul>
             </div>

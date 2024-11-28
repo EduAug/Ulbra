@@ -15,25 +15,25 @@
       "photo_url": "http://picsum.photos/200"
     },
     {
-      "id": "a8e7",
       "name": "Meu Nome",
       "price": "54,60",
       "description": "Minha Descrição",
-      "photo_url": "https://picsum.photos/200"
+      "photo_url": "http://picsum.photos/200",
+      "id": "a8e7"
     },
     {
-      "id": "7816",
       "name": "Novo add",
       "price": "Ilimitado",
       "description": "Com texto em Impact",
-      "photo_url": "http://picsum.photos/200"
+      "photo_url": "https://picsum.photos/200",
+      "id": "7816"
     },
     {
-      "id": "9c34",
       "name": "Um terceiro",
       "price": "19.20",
       "description": "outro cara ai",
-      "photo_url": "http://picsum.photos/100"
+      "photo_url": "http://picsum.photos/100",
+      "id": "9c34"
     },
     {
       "name": "Bazz-B",
@@ -48,6 +48,13 @@
       "price": "7.50",
       "description": "Fotos aleatórias para compra por parte de terceiros.",
       "photo_url": "http://picsum.photos/201"
+    },
+    {
+      "name": "Coisa numero 8",
+      "price": "21,12",
+      "description": "Com picsum de 240",
+      "photo_url": "http://picsum.photos/209",
+      "id": "d9b5"
     }
   ]
 }

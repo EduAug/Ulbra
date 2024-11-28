@@ -38,7 +38,7 @@ function CriarProdutosPage(){
 
             <div className="campo">
                 <input
-                    placeholder='Nome'
+                    placeholder='Nome*'
                     name="nome"
                     value={nome}
                     type="text"
@@ -51,7 +51,7 @@ function CriarProdutosPage(){
             <div className="campo">
                 <input
                     name="foto"
-                    placeholder='Imagem'
+                    placeholder='Imagem*'
                     value={photo}
                     type="text"
                     id='foto'
@@ -75,11 +75,12 @@ function CriarProdutosPage(){
             <div className="campo">
                 <input
                     name="price"
-                    placeholder='Preço'
+                    placeholder='Preço*'
                     value={price}
                     id='fato'
                     onChange={(e)=> setPrice(e.target.value)}
                     type="text"
+                    required
                 />
             </div>
 

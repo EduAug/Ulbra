@@ -61,7 +61,7 @@ function EditarProdutoPage(){
         <form onSubmit={handleSubmit} className="form-container">
         <div className="campo">
                 <input
-                    placeholder='Nome'
+                    placeholder='Nome*'
                     name="nome"
                     value={nome}
                     type="text"
@@ -74,7 +74,7 @@ function EditarProdutoPage(){
             <div className="campo">
                 <input
                     name="foto"
-                    placeholder='Imagem'
+                    placeholder='Imagem*'
                     value={photo}
                     type="text"
                     id='foto'
@@ -87,7 +87,7 @@ function EditarProdutoPage(){
             <div className="campo">
                 <input
                     name="description"
-                    placeholder='Descrição'
+                    placeholder='Descrição*'
                     value={description}
                     id='fato'
                     onChange={(e)=> setDesc(e.target.value)}
@@ -98,7 +98,7 @@ function EditarProdutoPage(){
             <div className="campo">
                 <input
                     name="price"
-                    placeholder='Preço'
+                    placeholder='Preço*'
                     value={price}
                     id='fato'
                     onChange={(e)=> setPrice(e.target.value)}

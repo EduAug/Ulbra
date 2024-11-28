@@ -8,20 +8,6 @@
       "photo_url": "https://picsum.photos/200"
     },
     {
-      "id": "2",
-      "name": "Produto 2",
-      "price": 29.99,
-      "description": "Descrição do Produto 2",
-      "photo_url": "https://picsum.photos/200"
-    },
-    {
-      "id": "67bb",
-      "name": "uma parada ai",
-      "price": "39,98",
-      "description": "uma parada ai",
-      "photo_url": "picsum.photos/200"
-    },
-    {
       "id": "6b6a",
       "name": "outra parada",
       "price": "0,99",
@@ -50,11 +36,18 @@
       "photo_url": "http://picsum.photos/100"
     },
     {
-      "id": "dbdf",
-      "name": "E um último",
-      "price": "5",
-      "description": "nem é nada demais, mas também preciso testar caso alguém decida inserir uma descrição ligeiramente extremamente maior que o esperado por parte da aplicação, com base nas anteriores",
-      "photo_url": "https://picsum.photos/300"
+      "name": "Bazz-B",
+      "price": "56,84",
+      "description": "Schrift H - The Heat",
+      "photo_url": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/07/bazz-b-is-talking-excitedly.jpg",
+      "id": "dbdf"
+    },
+    {
+      "id": "e1a7",
+      "name": "Foto misc. #4",
+      "price": "7.50",
+      "description": "Fotos aleatórias para compra por parte de terceiros.",
+      "photo_url": "http://picsum.photos/201"
     }
   ]
 }

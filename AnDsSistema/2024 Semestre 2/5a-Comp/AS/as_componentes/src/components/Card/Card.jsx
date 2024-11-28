@@ -4,7 +4,9 @@ function Card({imagem, nome, desc, valor}){
     return(
         <>
         <div className="card-item-completo">
-            <img className='card-imagem' src={ imagem } alt={ 'Imagem de '+nome } />
+            <div className="image-container-container">
+                <img className='card-imagem' src={ imagem } alt={ 'Imagem de '+nome } />
+            </div>
             <div className="card-container">
                 <h1 className='card-nome'>{ nome }</h1>
                 <hr />

@@ -12,6 +12,8 @@
 .card-imagem{
     min-width: 100%;
     max-width: 200px;
+    object-fit: contain;
+    min-height: 100%;
 }
 
 .card-item-completo{
@@ -33,6 +35,15 @@
 .card-valor{
     margin: 2vh;
     font-size: 1em;
+}
+
+.image-container-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
 }
 
 hr{

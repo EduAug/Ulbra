@@ -12,7 +12,12 @@
 .container-image-detalhes{
     background-color: rgb(211, 211, 211);
     padding: 3vh;
+    width: 40vw;
     border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-dados-detalhes{
@@ -29,9 +34,55 @@
     margin-bottom: 5vh;
 }
 
+.container-operacoes{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+
+.delete-button{
+    margin-top: 5vh;
+    width: 40%;
+    height: 70px;
+
+    transition: 0.3s ease-in-out;
+
+    border-radius: 14px;
+    border: none;
+    background-color: rgb(167, 0, 0);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+.delete-button:hover{
+    scale: 1.1;
+    background-color: red;
+    box-shadow: 0 0 10px darkgray;
+}
+.edit-button{
+    margin-top: 5vh;
+    width: 40%;
+    height: 70px;
+    
+    transition: 0.3s ease-in-out;
+    
+    border-radius: 14px;
+    border: none;
+    background-color: rgb(211, 211, 211);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+.edit-button:hover{
+    scale: 1.1;
+    background-color: white;
+    box-shadow: 0 0 10px darkgray;
+}
+
 .item-imagem{
     border-radius: 20px;
-    min-width: 40vw;
+    width: 100%;
+    object-fit: contain;
 }
 
 .item-name{

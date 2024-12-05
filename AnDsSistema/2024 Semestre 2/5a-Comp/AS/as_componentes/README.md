@@ -27,4 +27,4 @@ em outro terminal, execute
 ```
 npm run dev
 ```
-então, abra o navegador no link [localhost:5173](localhost:5173)
+então, abra o navegador no link [localhost:5173](http://127.0.0.1:5173)
